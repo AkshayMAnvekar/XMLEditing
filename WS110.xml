@@ -1,0 +1,659 @@
+<tutelage_tmpl name="TU1073M">
+	<feedback name = "FB1">
+		<trigger>
+			<cond>
+				<choice_ref name ="C2"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB2">
+		<trigger>
+			<cond>
+				<choice_ref name ="C3"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB3">
+		<trigger>
+			<cond>
+				<choice_ref name ="C4"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1073">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$(A*10+1)+(B*10+1)$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB2">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$((A+1)+(B+1))*10$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB3">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$Math.ceil(((A*10+1)+(B*10+1))/10)*10$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON"></feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1074">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$A+B$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON"></feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1075M">
+	<feedback name = "FB1">
+		<trigger>
+			<cond>
+				<choice_ref name ="C1"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB2">
+		<trigger>
+			<cond>
+				<choice_ref name ="C2"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB3">
+		<trigger>
+			<cond>
+				<choice_ref name ="C3"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1075">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$A+B$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB2">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$Math.round(A/100)*100+Math.round(B/100)*100+100$</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB3">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$Math.round(A/100)*100+Math.round(B/100)*100-100$</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON"></feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1076M">
+	<feedback name = "FB1">
+		<trigger>
+			<cond>
+				<choice_ref name ="C2"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB2">
+		<trigger>
+			<cond>
+				<choice_ref name ="C3"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB3">
+		<trigger>
+			<cond>
+				<choice_ref name ="C4"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1076">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$(A+B)*10$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB2">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$(A*10+1)+(B*10+1)$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON"></feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1077M">
+	<feedback name = "FB1">
+		<trigger>
+			<cond>
+				<choice_ref name ="C2"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB2">
+		<trigger>
+			<cond>
+				<choice_ref name ="C3"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB3">
+		<trigger>
+			<cond>
+				<choice_ref name ="C4"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1077">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$Math.round(A/10)*10-Math.round(B/10)*10$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB2">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$A-B$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB3">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$Math.round(A/10)*10+Math.round(B/10)*10$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON"></feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1078M">
+	<feedback name = "FB1">
+		<trigger>
+			<cond>
+				<choice_ref name ="C1"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB2">
+		<trigger>
+			<cond>
+				<choice_ref name ="C2"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB3">
+		<trigger>
+			<cond>
+				<choice_ref name ="C4"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1078">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$Math.round(A/100)*100+Math.round(B/100)*100$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB2">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$Math.round(A/10)*10-Math.round(B/10)*10$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB3">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$A-B$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON"></feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1079">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$A$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB2">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$B$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON"></feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1080">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<param name="C" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$A*100+B*10+C$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB2">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==220
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON"></feedback>
+</tutelage_tmpl>
+
+<problem_tmpl name="PR1073" width="200">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<constraints>
+			<cond>1 &lt;= A &lt;= 8</cond>
+			<cond>1 &lt;= B &lt;= 8</cond>
+		</constraints>
+	</params>
+	<p>Round each number to the nearest ten to estimate the sum:</p>
+	<group name="PR1073" type="MCQ">
+		<p>$(A*10)+1$ + $(B*10)+1$ = About ______</p>
+		<choice name="C1">$(A+B)*10$</choice>
+		<choice name="C2">$(A*10+1)+(B*10+1)$</choice>
+		<choice name="C3">$((A+1)+(B+1))*10$</choice>
+		<choice name="C4">$Math.ceil((((A*10)+1)+((B*10)+1))/10)*10$</choice>
+		<solutions>
+			<solution>
+				<div>
+					<repeat index="i" val="4">
+						<cond><choice_ref name="C$i+1$"/>==$(i)==(0)$</cond>
+					</repeat>
+				</div>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1073M"></tutelage_ref>
+	</group>
+	<group name="PR1073" type="FIB">
+		<p>$(A*10)+1$ + $(B*10)+1$ = About <fib name="fib1"/></p>
+		<solutions>
+			<solution>
+				<cond><fib_ref name="fib1"/>==$(A+B)*10$</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1073">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+		</tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1074" width="500">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<constraints>
+			<cond>Math.abs((Math.round(A &#247; 10) &#215; 10) - (Math.round(A &#247; 100) &#215; 100)) + 10 &lt; 20</cond>
+			<cond>Math.abs((Math.round(B &#247; 10) &#215; 10) - (Math.round(B &#247; 100) &#215; 100)) + 10 &lt; 20</cond>
+			<cond>(A + B) &lt; 1000</cond>
+		</constraints>
+	</params>
+	<p>Round each number to the nearest hundred to estimate the sum:</p>
+	<p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1561368398/Tutor/SH1004.svg" width="500px"/></p>
+	<group>
+		<p>$A$ + $B$ = About <fib name="fib1"/></p>
+		<solutions>
+			<solution>
+				<cond><fib_ref name="fib1"/>==$Math.round(A/100)*100+Math.round(B/100)*100$</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1074">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+		</tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1075" width="300">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<constraints>
+			<cond>300 &lt; A &lt; 500</cond>
+			<cond>150 &lt; B &lt; 400</cond>
+			<cond>(A % 100) &#8800; 0</cond>
+			<cond>(B % 100) &#8800; 0</cond>
+			<cond>(A + B) &lt; 1000</cond>
+			<cond>(Math.floor(A &#247; 10) % 10) == 0 || (Math.floor(A &#247; 10) % 10) == 1 || (Math.floor(A &#247; 10) % 10) == 9</cond>
+			<cond>(Math.floor(B &#247; 10) % 10) == 0 || (Math.floor(B &#247; 10) % 10) == 1 || (Math.floor(B &#247; 10) % 10) == 9</cond>
+		</constraints>
+	</params>
+	<p>Jimmy is a farmer. He plants $A$ strawberry seeds and $B$ watermelon seeds. Round each number to the nearest hundred to estimate the total number of seeds.</p>
+	<group name="PR1075" type="MCQ">
+		<choice name="C1">$A+B$ seeds</choice>
+		<choice name="C2">$Math.round(A/100)*100+Math.round(B/100)*100+100$ seeds</choice>
+		<choice name="C3">$Math.round(A/100)*100+Math.round(B/100)*100-100$ seeds</choice>
+		<choice name="C4">$Math.round(A/100)*100+Math.round(B/100)*100$ seeds</choice>
+		<solutions>
+			<solution>
+				<div>
+					<repeat index="i" val="4">
+						<cond>
+							<choice_ref name="C$i+1$"/>==$(i)==(3)$
+						</cond>
+					</repeat>
+				</div>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1075M"></tutelage_ref>
+	</group>
+	<group name="PR1075" type="FIB">
+		<p><fib name="fib1"/> seeds</p>
+		<solutions>
+			<solution>
+				<cond><fib_ref name="fib1"/>==$((Math.round(A/100)+Math.round(B/100))*100)$</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1075">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+		</tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1076" width="200">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<constraints>
+			<cond>1 &lt;= A &lt;= 8</cond>
+			<cond>1 &lt;= B &lt;= 8</cond>
+			<cond>A &gt; B</cond>
+		</constraints>
+	</params>
+	<p>Round each number to the nearest ten to estimate the difference:</p>
+	<group name="PR1076" type="MCQ">
+		<p>$(A*10)+1$ - $(B*10)+1$ = About _____</p>
+		<choice name="C1">$(A-B)*10$</choice>
+		<choice name="C2">$(A+B)*10$</choice>
+		<choice name="C3">$(A*10+1)+(B*10+1)$</choice>
+		<choice name="C4">$(A+B)*10+3$</choice>
+		<solutions>
+			<solution>
+				<div>
+					<repeat index="i" val="4">
+						<cond><choice_ref name="C$i+1$"/>==$(i)==(0)$</cond>
+					</repeat>
+				</div>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1076M"></tutelage_ref>
+	</group>
+	<group name="PR1076" type="FIB">
+		<p>$(A*10)+1$ - $(B*10)+1$ = About <fib name="fib1"/></p>
+		<solutions>
+			<solution>
+				<cond><fib_ref name="fib1"/>==$(A-B)*10$</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1076">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+		</tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1077" width="300">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<constraints>
+			<cond>600 &lt;= A &lt;= 900</cond>
+			<cond>200 &lt;= B &lt;= 500</cond>
+			<cond>A &gt; B</cond>
+			<cond>(Math.floor(A &#247; 10) % 10) == 0 || (Math.floor(A &#247; 10) % 10) == 1</cond>
+			<cond>(Math.floor(B &#247; 10) % 10) == 0 || (Math.floor(B &#247; 10) % 10) == 1</cond>
+		</constraints>
+	</params>
+	<p>Robert has $A$ balloons. Charles has $B$ balloons. How many more balloons does Robert have? Round each number to the nearest hundred to estimate the difference.</p>
+	<group name="PR1077" type="MCQ">
+		<choice name="C1">$Math.round(A/100)*100-Math.round(B/100)*100$ balloons</choice>
+		<choice name="C2">$Math.round(A/10)*10-Math.round(B/10)*10$ balloons</choice>
+		<choice name="C3">$A-B$ balloons</choice>
+		<choice name="C4">$Math.round(A/100)*100+Math.round(B/100)*100$ balloons</choice>
+
+		<solutions>
+			<solution>
+				<repeat index="i" val="4">
+					<cond><choice_ref name="C$i+1$"/>==$(i)==(0)$</cond>
+				</repeat>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1077M"></tutelage_ref>
+	</group>
+	<group name="PR1077" type="FIB">
+		<p>Robert has about <fib name="fib1"/> more balloons.</p>
+		<solutions>
+			<solution>
+				<cond>
+					<fib_ref name="fib1"/>==$Math.round(A/100)*100-Math.round(B/100)*100$
+				</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1077">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+		</tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1078" width="400">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<constraints>
+			<cond>400 &lt;= A &lt;= 800</cond>
+			<cond>100 &lt;= B &lt;= 400</cond>
+			<cond>A &gt; B</cond>
+			<cond>(A % 10) == 8 || (A % 10) == 9</cond>
+			<cond>(B % 10) == 8 || (B % 10) == 9</cond>
+		</constraints>
+		<p>Kevin built two houses. He used $A$ nails in the first house and $B$ nails in the second house. Round each number to the nearest hundred to estimate the difference.</p>
+	</params>
+	<group name="PR1078" type="MCQ">
+		<choice name="C1">$Math.round(A/100)*100+Math.round(B/100)*100$ nails</choice>
+		<choice name="C2">$Math.round(A/10)*10-Math.round(B/10)*10$ nails</choice>
+		<choice name="C3">$Math.round(A/100)*100-Math.round(B/100)*100$ nails</choice>
+		<choice name="C4">$A-B$ nails</choice>
+		<solutions>
+			<solution>
+				<repeat index="i" val="4">
+					<cond><choice_ref name="C$i+1$"/>==$(i)==(2)$</cond>
+				</repeat>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1078M"></tutelage_ref>
+	</group>
+	<group name="PR1078" type="FIB">
+		<p><fib name="fib1"/> nails</p>
+		<solutions>
+			<solution>
+				<cond>
+					<fib_ref name="fib1"/>==$Math.round(A/100)*100-Math.round(B/100)*100$
+				</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1078">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+		</tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1079" width="300">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<constraints>
+			<cond>150 &lt;= A &lt;= 950</cond>
+			<cond>100 &lt;= B &lt;= 900</cond>
+			<cond>(A + B) &lt; 1000 </cond>
+		</constraints>
+	</params>
+	<group>
+		<p>Find the sum:</p>
+		<p>$A$ + $B$ = <fib name="fib1"/><br/></p>
+		<solutions>
+			<solution>
+				<cond><fib_ref name="fib1"/>==$A+B$</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1079">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+		</tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1080" width="300">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<param name="C" type="int"/>
+		<param name="D" type="int"/>
+		<constraints>
+			<cond>3 &lt; A &lt; 9</cond>
+			<cond>1 &lt; B &lt; 9</cond>
+			<cond>C == 0</cond>
+		</constraints>
+	</params>
+	<p>Find the difference:</p>
+	<group>
+		<p>$(A*100)+(B*10)+C$ - 220 = <fib name="fib1"/></p>
+		<solutions>
+			<solution>
+				<cond>
+					<fib_ref name="fib1"/>==$(A*100)+(B*10)+C-220$
+				</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1080">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+			<bind name="C" val="C"/>
+		</tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<worksheet_tmpl name="WS110">
+
+	<problem_ref name="PR1073">
+		<bind name="A" val="2"/>
+		<bind name="B" val="3"/>
+	</problem_ref>
+
+	<problem_ref name="PR1074">
+		<bind name="A" val="192"/>
+		<bind name="B" val="513"/>
+	</problem_ref>
+
+	<problem_ref name="PR1075">
+		<bind name="A" val="407"/>
+		<bind name="B" val="292"/>
+	</problem_ref>
+
+	<problem_ref name="PR1076">
+		<bind name="A" val="5"/>
+		<bind name="B" val="2"/>
+	</problem_ref>
+
+	<problem_ref name="PR1077">
+		<bind name="A" val="612"/>
+		<bind name="B" val="304"/>
+	</problem_ref>
+
+	<problem_ref name="PR1078">
+		<bind name="A" val="599"/>
+		<bind name="B" val="285"/>
+	</problem_ref>
+
+	<problem_ref name="PR1079">
+		<bind name="A" val="150"/>
+		<bind name="B" val="200"/>
+	</problem_ref>
+
+	<problem_ref name="PR1080">
+		<bind name="A" val="4"/>
+		<bind name="B" val="2"/>
+		<bind name="C" val="0"/>
+	</problem_ref>
+
+</worksheet_tmpl><worksheet_ref name="WS110"/>
+append_me 

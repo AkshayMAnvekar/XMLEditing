@@ -1,0 +1,720 @@
+
+<tutelage_tmpl name="TU1001M">
+	<feedback name = "FB1">
+		<trigger>
+			<cond>
+				<choice_ref name ="C2"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB2">
+		<trigger>
+			<cond>
+				<choice_ref name ="C3"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB3">
+		<trigger>
+			<cond>
+				<choice_ref name ="C4"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1001">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<param name="C" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond><fib_ref name="fib1"/>==$B*100+A*10+C$</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB2">
+		<trigger>
+			<cond><fib_ref name="fib1"/>==$C*100+B*10+A$</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB3">
+		<trigger>
+			<cond>(Math.floor(<fib_ref name="fib1"/>/100)==Math.floor(<fib_ref name="fib1"/>/10)%10) ||
+			(<fib_ref name="fib1"/>%10==Math.floor(<fib_ref name="fib1"/>/10)%10) ||
+			(Math.floor(<fib_ref name="fib1"/>/100)==<fib_ref name="fib1"/>%10)</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB4">
+		<trigger>
+			<cond><fib_ref name="fib1"/>==$A+B+C$</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB5">
+		<trigger>
+			<cond><fib_ref name="fib1"/>==$A*100*1000+B*10*10+C$</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON">
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1002M">
+	<feedback name = "FB1">
+		<trigger>
+			<cond>
+				<choice_ref name ="C1"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB2">
+		<trigger>
+			<cond>
+				<choice_ref name ="C2"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB3">
+		<trigger>
+			<cond>
+				<choice_ref name ="C3"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+</tutelage_tmpl>
+<tutelage_tmpl name="TU1002">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<param name="C" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond><fib_ref name="fib1"/>==$B*100+A*10+C$</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB2">
+		<trigger>
+			<cond><fib_ref name="fib1"/>==$A*100+C*10+B$</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB3">
+		<trigger>
+			<cond>(Math.floor(<fib_ref name="fib1"/>/100)==Math.floor(<fib_ref name="fib1"/>/10)%10) ||
+			(<fib_ref name="fib1"/>%10==Math.floor(<fib_ref name="fib1"/>/10)%10) ||
+			(Math.floor(<fib_ref name="fib1"/>/100)==<fib_ref name="fib1"/>%10)</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB4">
+		<trigger>
+			<cond><fib_ref name="fib1"/>==$A+B+C$</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB5">
+		<trigger>
+			<cond><fib_ref name="fib1"/>==$A*100*1000+B*10*10+C$</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON">
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1003">
+	<feedback name = "FB1">
+		<trigger>
+			<cond>
+				<choice_ref name ="C1"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB2">
+		<trigger>
+			<cond>
+				<choice_ref name ="C2"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB3">
+		<trigger>
+			<cond>
+				<choice_ref name ="C3"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1004">
+	<feedback name = "FB1">
+		<trigger>
+			<cond>
+				<choice_ref name ="C2"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB2">
+		<trigger>
+			<cond>
+				<choice_ref name ="C3"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB3">
+		<trigger>
+			<cond>
+				<choice_ref name ="C4"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1005">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$B*100$
+			</cond>
+			<cond>
+				<fib_ref name="fib2"/>==$A*10$
+			</cond>
+			<cond>
+				<fib_ref name="fib3"/>==4
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB2">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$A*100$
+			</cond>
+			<cond>
+				<fib_ref name="fib2"/>==40
+			</cond>
+			<cond>
+				<fib_ref name="fib3"/>==$B$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB3">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==400
+			</cond>
+			<cond>
+				<fib_ref name="fib2"/>==$B$
+			</cond>
+			<cond>
+				<fib_ref name="fib3"/>==$A$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON">
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1006">
+	<params>
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<param name="C" type="int"/>
+	</params>
+	<feedback name="FB1">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$B*100$
+			</cond>
+			<cond>
+				<fib_ref name="fib2"/>==$A*10$
+			</cond>
+			<cond>
+				<fib_ref name="fib3"/>==$C$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB2">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$A*100$
+			</cond>
+			<cond>
+				<fib_ref name="fib2"/>==$C*10$
+			</cond>
+			<cond>
+				<fib_ref name="fib3"/>==$B$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="FB3">
+		<trigger>
+			<cond>
+				<fib_ref name="fib1"/>==$C*100$
+			</cond>
+			<cond>
+				<fib_ref name="fib2"/>==$B*10$
+			</cond>
+			<cond>
+				<fib_ref name="fib3"/>==$A$
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON">	 
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1007">
+	<feedback name="FB1">
+		<trigger>
+			<choice_ref name ="C1"/>==1
+		</trigger>
+	</feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1008M">
+	<feedback name = "FB1">
+		<trigger>
+			<cond>
+				<choice_ref name ="C1"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB2">
+		<trigger>
+			<cond>
+				<choice_ref name ="C2"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+	<feedback name = "FB3">
+		<trigger>
+			<cond>
+				<choice_ref name ="C3"/>==1
+			</cond>
+		</trigger>
+	</feedback>
+</tutelage_tmpl>
+<tutelage_tmpl name="TU1008">
+	<feedback name="FB1">
+		<trigger>
+			<cond><fib_ref name="fib1"/>==(683||836||863)</cond>
+		</trigger>
+	</feedback>
+	<feedback name="_UNCOMMON">
+		
+	</feedback>
+</tutelage_tmpl>
+
+<problem_tmpl name="PR1001" width="300">
+	<params>
+		<param name="A" type="int" />
+		<param name="B" type="int" />
+		<param name="C" type="int" />
+		<constraints>
+			<cond>1 &#8804; A &#8804; 9
+			</cond>
+			<cond>1 &#8804; B &#8804; 9
+			</cond>
+			<cond>1 &#8804; C &#8804; 4
+			</cond>
+			<cond>A &#8800; B
+			</cond>
+			<cond>B &#8800; C
+			</cond>
+			<cond>A &#8800; C
+			</cond>
+		</constraints>
+	</params>
+	<group name="PR1001" type="FIB">
+		<p>$A$ hundreds, $B$ tens, and $C$ ones can be written in standard form as 
+			<fib name="fib1" />.
+		</p>
+		<solutions>
+			<solution>
+				<cond>
+					<fib_ref name="fib1" />==$(A*100)+(B*10)+C$
+				</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1001">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+			<bind name="C" val="C"/>
+		</tutelage_ref>
+	</group>
+	<group name="PR1001" type="MCQ">
+		<p>$A$ hundreds, $B$ tens, and $C$ ones can be written in standard form as ________.
+			<br />
+		</p>
+		<choice name="C1">$(A*100)+(B*10)+C$
+		</choice>
+		<choice name="C2">$(B*100)+(A*10)+C$
+		</choice>
+		<choice name="C3">$(A*100)+(C*10)+A$
+		</choice>
+		<choice name="C4">$(C*100)+(B*10)+A$
+		</choice>
+		<solutions>
+			<solution>
+				<repeat index="i" val="4">
+					<cond>
+						<choice_ref name="C$i+1$" />==$(i)==(0)$
+					</cond>
+				</repeat>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1001M"></tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1002" width="300">
+	<params>
+		<param name="A" type="int" />
+		<param name="B" type="int" />
+		<param name="C" type="int" />
+		<constraints>
+			<cond>1 &#8804; A &#8804; 9
+			</cond>
+			<cond>1 &#8804; B &#8804; 9
+			</cond>
+			<cond>1 &#8804; C &#8804; 4
+			</cond>
+			<cond>A &#8800; B
+			</cond>
+			<cond>B &#8800; C
+			</cond>
+			<cond>A &#8800; C
+			</cond>
+		</constraints>
+	</params>
+	<group name="PR1002" type="FIB">
+		<p>$A*100$ + $B*10$ + $C$ can be written in standard form as
+			<fib name="fib1" />.
+		</p>
+		<solutions>
+			<solution>
+				<cond>
+					<fib_ref name="fib1" />==$(A*100)+(B*10)+C$
+				</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1002">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+			<bind name="C" val="C"/>
+		</tutelage_ref>
+	</group>
+	<group name="PR1002" type="MCQ">
+		<p>$A*100$ + $B*10$ + $C$ can be written in standard form as ________. 
+		</p>
+		<choice name="C1">$(B*100)+(A*10)+C$
+		</choice>
+		<choice name="C2">$(A*100)+(C*10)+A$
+		</choice>
+		<choice name="C3">$(C*100)+(B*10)+B$
+		</choice>
+		<choice name="C4">$(A*100)+(B*10)+C$
+		</choice>
+		<solutions>
+			<solution>
+				<repeat index="i" val="4">
+					<cond>
+						<choice_ref name="C$i+1$" />==$(i)==(3)$
+					</cond>
+				</repeat>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1002M"></tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1003" width="300">
+	<p>The number 352 can be written in word form as:
+	</p>
+	<group>
+		<choice name="C1">five hundred thirty-two
+		</choice>
+		<choice name="C2">three hundred twenty-five
+		</choice>
+		<choice name="C3">two hundred fifty-three
+		</choice>
+		<choice name="C4">three hundred fifty-two
+		</choice>
+		<solutions>
+			<solution>
+				<repeat index="i" val="4">
+					<cond>
+						<choice_ref name="C$i+1$" />==$(i)==(3)$
+					</cond>
+				</repeat>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1003"></tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1004" width="300">
+	<params>
+		<param name="A" type="int" />
+		<param name="B" type="int" />
+		<param name="C" type="int" />
+		<constraints>
+			<cond>1 &lt; A &lt; 5
+			</cond>
+			<cond>5 &lt; B &lt; 9
+			</cond>
+			<cond>1 &lt; C &lt; 5
+			</cond>
+			<cond>A &#8800; C
+			</cond>
+		</constraints>
+	</params>
+	<p>$A*100$ + $B*10$ + $C$ can be written as _____ hundreds, _____ tens, and _____ ones.
+		<br />
+	</p>
+	<group>
+		<choice name="C1">$A$ hundreds, $B$ tens, and $C$ ones 
+		</choice>
+		<choice name="C2">$B$ hundreds, $A$ tens, and $C$ ones
+		</choice>
+		<choice name="C3">$A$ hundreds, $C$ tens, and $B$ ones
+		</choice>
+		<choice name="C4">$C$ hundreds, $B$ tens, and $A$ ones
+		</choice>
+		<solutions>
+			<solution>
+				<repeat index="i" val="4">
+					<cond>
+						<choice_ref name="C$i+1$" />==$(i)==(0)$
+					</cond>
+				</repeat>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1004"></tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1005" width="300">
+	<params>
+		<param name="A" type="int" />
+		<param name="B" type="int" />
+		<constraints>
+			<cond>1 &#8804; A &#8804; 9
+			</cond>
+			<cond>1 &#8804; B &#8804; 4
+			</cond>
+			<cond>A &#8800; B
+			</cond>
+		</constraints>
+	</params>
+	<p>What is the expanded form of $(A*100)+B*10+4$?
+	</p>
+	<group>
+		<fib name="fib1" /> + 
+		<fib name="fib2" /> + 
+		<fib name="fib3" /> 
+		<br />
+		<solutions>
+			<solution>
+				<cond>
+					<fib_ref name="fib1" />==$A*100$
+				</cond>
+				<cond>
+					<fib_ref name="fib2" />==$B*10$
+				</cond>
+				<cond>
+					<fib_ref name="fib3" />==$4$
+				</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1005">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+		</tutelage_ref>
+	</group>
+</problem_tmpl>
+
+
+<problem_tmpl name="PR1006" width="300">
+	<params>
+		<param name="A" type="int" />
+		<param name="B" type="int" />
+		<param name="C" type="int" />
+		<constraints>
+			<cond>1 &#8804; A &#8804; 9
+			</cond>
+			<cond>1 &#8804; B &#8804; 9
+			</cond>
+			<cond>1 &#8804; C &#8804; 4
+			</cond>
+			<cond>A &#8800; B
+			</cond>
+			<cond>B &#8800; C
+			</cond>
+			<cond>A &#8800; C
+			</cond>
+		</constraints>
+	</params>
+	<p>What is the expanded form of $(A*100)+B*10+C$?
+		<br />
+	</p>
+	<group>
+		<fib name="fib1" /> + 
+		<fib name="fib2" /> + 
+		<fib name="fib3" /> 
+		<br />
+		<solutions>
+			<solution>
+				<cond>
+					<fib_ref name="fib1" />==$A*100$
+				</cond>
+				<cond>
+					<fib_ref name="fib2" />==$B*10$
+				</cond>
+				<cond>
+					<fib_ref name="fib3" />==$C$
+				</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1006">
+			<bind name="A" val="A"/>
+			<bind name="B" val="B"/>
+			<bind name="C" val="C"/>
+		</tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1007" width="300">
+	<params>
+		<param name="A" type="int" />
+		<param name="B" type="int" />
+		<param name="C" type="int" />
+		<param name="D" type="int" />
+		<constraints>
+			<cond>1 &lt; A &lt; 5
+			</cond>
+			<cond>1 &lt; B &lt; 5
+			</cond>
+			<cond>5 &lt; C &lt; 9
+			</cond>
+			<cond>1 &lt; D &lt; 4
+			</cond>
+			<cond>A &#8800; B
+			</cond>
+		</constraints>
+	</params>
+	<p>Which is greater: $A$ tens + $B$ ones OR $C$ tens + $D$ ones?
+		<br />
+	</p>
+	<group>
+		<choice name="C1">$A$ tens + $B$ ones is greater
+		</choice>
+		<choice name="C2">$C$ tens + $D$ ones is greater
+		</choice>
+		<solutions>
+			<solution>
+				<repeat index="i" val="2">
+					<cond>
+						<choice_ref name="C$i+1$" />==$(i)==(1)$
+					</cond>
+				</repeat>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1007"></tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1008" width="400">
+	<group name="PR1008" type="FIB">
+		<p>Lisa has three number cards. What is the least possible number that Lisa can make with these cards? 
+			<fib name="fib1" />.
+		</p>
+		<p><img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1006.svg" width="100px" />
+			<img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1003.svg" width="100px" />
+			<img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1008.svg" width="100px" />
+		</p>
+		<solutions>
+			<solution>
+				<cond>
+					<fib_ref name="fib1" />==368
+				</cond>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1008"></tutelage_ref>
+	</group>
+
+	<group name="PR1008" type="MCQ">
+		<p>Lisa has three number cards. What is the least possible number that Lisa can make with these cards?
+		</p>
+		<p><img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1006.svg" width="100px" />
+			<img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1003.svg" width="100px" />
+			<img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1008.svg" width="100px" />
+		</p>
+		<choice name="C1">683
+		</choice>
+		<choice name="C2">836
+		</choice>
+		<choice name="C3">863
+		</choice>
+		<choice name="C4">368
+		</choice>
+		<solutions>
+			<solution>
+				<repeat index="i" val="4">
+					<cond>
+						<choice_ref name="C$i+1$" />==$(i)==(3)$
+					</cond>
+				</repeat>
+			</solution>
+		</solutions>
+		<tutelage_ref name="TU1008M"></tutelage_ref>
+	</group>
+</problem_tmpl>
+
+<worksheet_tmpl name="WS101">
+	<problem_ref name="PR1001">
+		<bind name="A" val="4" />
+		<bind name="B" val="5" />
+		<bind name="C" val="2" />
+	</problem_ref>
+
+	<problem_ref name="PR1002">
+		<bind name="A" val="3" />
+		<bind name="B" val="6" />
+		<bind name="C" val="4" />
+	</problem_ref>
+
+	<problem_ref name="PR1003">
+	</problem_ref>
+
+	<problem_ref name="PR1004">
+		<bind name="A" val="4" />
+		<bind name="B" val="7" />
+		<bind name="C" val="2" />
+	</problem_ref>
+
+	<problem_ref name="PR1005">
+		<bind name="A" val="1" />
+		<bind name="B" val="3" />
+	</problem_ref>
+
+	<problem_ref name="PR1006">
+		<bind name="A" val="3" />
+		<bind name="B" val="5" />
+		<bind name="C" val="1" />
+	</problem_ref>
+
+	<problem_ref name="PR1007">
+		<bind name="A" val="2" />
+		<bind name="B" val="4" />
+		<bind name="C" val="6" />
+		<bind name="D" val="2" />
+	</problem_ref>
+
+	<problem_ref name="PR1008">
+	</problem_ref>
+
+</worksheet_tmpl>
+<worksheet_ref name="WS101" />append_me 

@@ -1,0 +1,439 @@
+<tutelage_tmpl name="TU1501M">
+  <feedback name = "FB1">
+    <trigger>
+      <cond>
+        <choice_ref name ="C2"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB2">
+    <trigger>
+      <cond>
+        <choice_ref name ="C3"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB3">
+    <trigger>
+      <cond>
+        <choice_ref name ="C4"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1501">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+  </params>
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$B*100+A*10+1$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*100+10+B$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$100+B*10+A$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON"></feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1502">
+  <feedback name = "FB1">
+    <trigger>
+      <cond>
+        <choice_ref name ="C2"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB2">
+    <trigger>
+      <cond>
+        <choice_ref name ="C3"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB3">
+    <trigger>
+      <cond>
+        <choice_ref name ="C4"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1503">
+  <feedback name = "FB1">
+    <trigger>
+      <cond>
+        <choice_ref name ="C2"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB2">
+    <trigger>
+      <cond>
+        <choice_ref name ="C3"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB3">
+    <trigger>
+      <cond>
+        <choice_ref name ="C4"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1504">
+  <feedback name = "FB1">
+    <trigger>
+      <cond>
+        <choice_ref name ="C2"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB2">
+    <trigger>
+      <cond>
+        <choice_ref name ="C3"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1505M">
+  <feedback name = "FB1">
+    <trigger>
+      <cond>
+        <choice_ref name ="C2"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB2">
+    <trigger>
+      <cond>
+        <choice_ref name ="C3"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB3">
+    <trigger>
+      <cond>
+        <choice_ref name ="C4"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1505">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+  </params>
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$(A+1)*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$(A-1)*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON"></feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1506M">
+  <feedback name = "FB1">
+    <trigger>
+      <cond>
+        <choice_ref name ="C1"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB2">
+    <trigger>
+      <cond>
+        <choice_ref name ="C3"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB3">
+    <trigger>
+      <cond>
+        <choice_ref name ="C4"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1506">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+  </params>
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*100$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$(A-1)*100$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$Math.round(A*10+B+C/10)*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON"></feedback>
+</tutelage_tmpl>
+
+<problem_tmpl name="PR1501" width="400">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <constraints>
+      <cond>1 &#60; A &#60; 5</cond>
+      <cond>1 &#60; B &#60; 5</cond>
+      <cond>A &#8800; B</cond>
+    </constraints>
+  </params>
+  <group name="PR1501" type="MCQ">
+    <p>What is the standard form of $A$ hundreds, $B$ tens, and 1 one?</p>
+    <choice name="C1">$A*100+B*10+1$</choice>
+    <choice name="C2">$B*100+A*10+1$</choice>
+    <choice name="C3">$A*100+10+B$</choice>
+    <choice name="C4">$100+B*10+A$</choice>
+    <solutions>
+      <solution>
+        <repeat val="4" index="i">
+          <cond><choice_ref name="C$i+1$"/>==$(i)==(0)$</cond>
+        </repeat>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1501M"></tutelage_ref>
+  </group>
+  <group name="PR1501" type="FIB">
+    <p>What is the standard form of $A$ hundreds, $B$ tens, and 1 one? <fib name="fib1" /></p>
+    <solutions>
+      <solution><cond><fib_ref name="fib1" />==$A*100+B*10+1$</cond></solution>
+    </solutions>
+    <tutelage_ref name="TU1501">
+      <bind name="A" val="A"/>
+      <bind name="B" val="B"/>
+    </tutelage_ref>
+  </group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1502" width="400">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+    <constraints>
+      <cond>1 &#60; A &#60; 6</cond>
+      <cond>1 &#60; B &#60; 7</cond>
+      <cond>7 &#60; C &#60; 10</cond>
+      <cond>A &#8800; B</cond>
+    </constraints>
+  </params>
+  <group>
+    <p>The expanded form of $A*100+B*10+C$ is _____.</p>
+    <choice name="C1">$A*100$ + $B*10$ + $C$</choice>
+    <choice name="C2">$B*100$ + $A*10$ + $C$</choice>
+    <choice name="C3">$A*100$ + $C*10$ + $A$</choice>
+    <choice name="C4">$C*100$ + $B*10$ + $A$</choice>
+    <solutions>
+      <solution>
+        <repeat val="4" index="i">
+          <cond><choice_ref name="C$i+1$"/>==$(i)==(0)$</cond>
+        </repeat>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1502"></tutelage_ref>
+  </group>
+  </problem_tmpl>
+<problem_tmpl name="PR1503" width="400">
+  <group>
+    <p>The word form of 238 is:</p>
+    <choice name="C1">two hundred thirty-eight</choice>
+    <choice name="C2">three hundred twenty-eight</choice>
+    <choice name="C3">two thirty-eight</choice>
+    <choice name="C4">eight hundred thirty-two</choice>
+    <solutions>
+      <solution>
+        <repeat val="4" index="i">
+          <cond><choice_ref name="C$i+1$"/>==$(i)==(0)$</cond>
+        </repeat>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1503"></tutelage_ref>
+  </group>
+</problem_tmpl>
+<problem_tmpl name="PR1504" width="400">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <constraints>
+      <cond>300 &#60; A &#60; 700</cond>
+      <cond>250 &#60; B &#60; 600</cond>
+      <cond>(A &#247; 10) % 10 == (B &#247; 10) % 10</cond>
+      <cond>(A % 10) &#62; 5</cond>
+      <cond>(B % 10) &#62; 5</cond>
+      <cond>A &#62; B</cond>
+    </constraints>
+  </params>
+  <p>Which symbol will make the statement true?</p>
+  <p>$A$ _____ $B$</p>
+  <group>
+    <choice name="C1">&#62;</choice>
+    <choice name="C2">&#60;</choice>
+    <choice name="C3">&#61;</choice>
+    <solutions>
+      <solution>
+        <repeat val="3" index="i">
+          <cond>
+            <choice_ref name="C$i+1$"/>==$(i)==(0)$
+          </cond>
+        </repeat>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1504"></tutelage_ref>
+  </group>
+</problem_tmpl>
+<problem_tmpl name="PR1505" width="400">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <constraints>
+      <cond>1 &#60; A &#60; 10</cond>
+      <cond>1 &#60; B &#60; 5</cond>
+    </constraints>
+  </params>
+  <p>There are $A*10+B$ students in Lisa’s class. Round the number of students to the nearest ten.</p>
+  <group name="PR1505" type="MCQ">
+  	<choice name="C1">$A*10$ students</choice>
+		<choice name="C2">$(A+1) * 10$ students</choice>
+		<choice name="C3">$(A*20)$ students</choice>
+		<choice name="C4">$(A-1) * 10$ students</choice>
+		<solutions>
+			<solution>
+				<repeat val="4" index="i">
+					<cond><choice_ref name="C$i+1$"/>==$(i)==(0)$</cond>
+				</repeat>
+			</solution>
+		</solutions>
+    <tutelage_ref name="TU1505M"></tutelage_ref>
+	</group>
+  <group name="PR1505" type="FIB">
+		<p><fib name="fib1" /> students</p>
+		<solutions>
+			<solution>
+        <cond>
+          <fib_ref name="fib1" />==$A*10$
+        </cond>
+      </solution>
+		</solutions>
+    <tutelage_ref name="TU1505">
+      <bind name="A" val="A"/>
+      <bind name="B" val="B"/>
+    </tutelage_ref>
+	</group>
+</problem_tmpl>
+<problem_tmpl name="PR1506" width="400">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+    <constraints>
+      <cond>1 &#60; A &#60; 9</cond>
+      <cond>B == 5</cond>
+      <cond>1 &#60; C &#60;10</cond>
+    </constraints>
+  </params>
+  <p>Matthew deposits $$$A*100+B*10+C$ into his bank account. Round the amount to the nearest hundred.</p>
+  <group name="PR1506" type="MCQ">
+		<choice name="C1">$$$A*100$</choice>
+		<choice name="C2">$$$(A+1) * 100$</choice>
+		<choice name="C3">$$$(A-1) * 100$</choice>
+		<choice name="C4">$$$A*100 + (B + 1) *10$</choice>
+		<solutions>
+			<solution>
+				<repeat val="4" index="i">
+					<cond><choice_ref name="C$i+1$"/>==$(i)==(1)$</cond>
+				</repeat>
+			</solution>
+		</solutions>
+    <tutelage_ref name="TU1506M"></tutelage_ref>
+	</group>
+  <group name="PR1506" type="FIB">
+		<p>$$ <fib name="fib1" /></p>
+		<solutions>
+			<solution>
+        <cond>
+          <fib_ref name="fib1" />==$(A+1) * 100$
+        </cond>
+      </solution>
+		</solutions>
+    <tutelage_ref name="TU1506">
+      <bind name="A" val="A"/>
+      <bind name="B" val="B"/>
+      <bind name="C" val="C"/>
+    </tutelage_ref>
+	</group>
+</problem_tmpl>
+<worksheet_tmpl name="WS151a">
+  <problem_ref name="PR1501">
+    <bind name="A" val="3"/>
+    <bind name="B" val="4"/>
+  </problem_ref>
+  <problem_ref name="PR1502">
+    <bind name="A" val="4"/>
+    <bind name="B" val="6"/>
+    <bind name="C" val="7"/>
+  </problem_ref>
+  <problem_ref name="PR1503"></problem_ref>
+  <problem_ref name="PR1504">
+    <bind name="A" val="656"/>
+    <bind name="B" val="557"/>
+  </problem_ref>
+  <problem_ref name="PR1505">
+    <bind name="A" val="5"/>
+    <bind name="B" val="4"/>
+  </problem_ref>
+  <problem_ref name="PR1506">
+    <bind name="A" val="8"/>
+    <bind name="B" val="5"/>
+    <bind name="C" val="7"/>
+  </problem_ref>
+</worksheet_tmpl>
+<worksheet_ref name="WS151a"/>
+append_me 

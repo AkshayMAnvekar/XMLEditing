@@ -1,0 +1,723 @@
+<tutelage_tmpl name="TU1065M">
+  <feedback name = "FB1">
+    <trigger>
+      <cond>
+        <choice_ref name ="C1"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB2">
+    <trigger>
+      <cond>
+        <choice_ref name ="C2"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB3">
+    <trigger>
+      <cond>
+        <choice_ref name ="C4"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1065">
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==50
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==55
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==56
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON">
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1066M">
+  <feedback name = "FB1">
+    <trigger>
+      <cond>
+        <choice_ref name ="C1"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB2">
+    <trigger>
+      <cond>
+        <choice_ref name ="C3"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB3">
+    <trigger>
+      <cond>
+        <choice_ref name ="C4"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1066">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+  </params>
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*10+B$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*10+5$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON">
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1067">
+  <params>
+    <param name="A" type="int"/>
+  </params>
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$(A-1)*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*10+5$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON">
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1068G1">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+  </params>
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*100+(B+1)*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$Math.round(A+B/10+C/100)*100$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$(A)*100+(B-1)*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB4">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*100+B*10+C$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON">
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1068G2">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+  </params>
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib2"/>==$(A-1)*100$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib2"/>==$(A)*100+(B)*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib2"/>==$A*100+B*10+C$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON">
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1069G1">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+  </params>
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*100+B*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$(A+1)*100$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$(A)*100+(B-1)*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB4">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*100+B*10+C$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON">
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1069G2">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+  </params>
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib2"/>==$A*100$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib2"/>==$(A-1)*100$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib2"/>==$(A)*100+(B+1)*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB4">
+    <trigger>
+      <cond>
+        <fib_ref name="fib2"/>==$A*100+B*10+C$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON">
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1070M">
+  <feedback name = "FB1">
+    <trigger>
+      <cond>
+        <choice_ref name ="C2"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB2">
+    <trigger>
+      <cond>
+        <choice_ref name ="C3"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB3">
+    <trigger>
+      <cond>
+        <choice_ref name ="C4"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1070">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+  </params>
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*100$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$Math.round(A*10+B+C/10)*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*100+B*10+C$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON">
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1071M">
+  <feedback name = "FB1">
+    <trigger>
+      <cond>
+        <choice_ref name ="C1"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB2">
+    <trigger>
+      <cond>
+        <choice_ref name ="C2"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name = "FB3">
+    <trigger>
+      <cond>
+        <choice_ref name ="C3"/>==1
+      </cond>
+    </trigger>
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1071">
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==300
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==350
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==360
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON">
+  </feedback>
+</tutelage_tmpl>
+
+<tutelage_tmpl name="TU1072">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+  </params>
+  <feedback name="FB1">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$(A+1)*100$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB2">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$Math.round(A*10+B+C/10)*10$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB3">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$(A-1)*100$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="FB4">
+    <trigger>
+      <cond>
+        <fib_ref name="fib1"/>==$A*100+B*10+C$
+      </cond>
+    </trigger>
+  </feedback>
+  <feedback name="_UNCOMMON">
+  </feedback>
+</tutelage_tmpl>
+
+<problem_tmpl name="PR1065" width="600">
+  <p>Round the circled number on the number line to the nearest ten.</p>
+  <p><img src="https://res.cloudinary.com/ansr/image/upload/v1563182713/Tutor/SH1002.svg" width="400px" alt="Number line for nearest ten"/></p>
+  <group name="PR1065" type="FIB">
+    <p><fib name="fib1" /></p>
+    <solutions>
+      <solution><cond><fib_ref name="fib1"/>==60</cond></solution>
+    </solutions>
+    <tutelage_ref name="TU1065"></tutelage_ref>
+  </group>
+  <group name="PR1065" type="MCQ">
+    <choice name="C1">50</choice>
+    <choice name="C2">55</choice>
+    <choice name="C3">60</choice>
+    <choice name="C4">56</choice>
+    <solutions>
+      <solution>
+        <repeat val="4" index="i">
+          <cond>
+            <choice_ref name="C$i+1$"/>==$(i)==(2)$
+          </cond>
+        </repeat>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1065M"></tutelage_ref>
+  </group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1066" width="200">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <constraints>
+      <cond>1 &#60; A &#60; 9</cond>
+      <cond>5 &#60; B &#60; 9</cond>
+    </constraints>
+  </params>
+  <p>A baker baked $(A*10)+B$ loaves of bread in a day. Round the number of loaves of bread to the nearest ten.</p>
+  <group name="PR1066" type="FIB">
+    <p><fib name="fib1" /> loaves of bread</p>
+    <solutions>
+      <solution><cond><fib_ref name="fib1"/>==$((A+1)*10)$</cond></solution>
+    </solutions>
+    <tutelage_ref name="TU1066">
+      <bind name="A" val="A"/>
+      <bind name="B" val="B"/>
+    </tutelage_ref>
+  </group>
+  <group name="PR1066" type="MCQ">
+    <choice name="C1">$(A*10)+B$ loaves of bread</choice>
+    <choice name="C2">$((A+1)*10)$ loaves of bread</choice>
+    <choice name="C3">$(A*10)$ loaves of bread</choice>
+    <choice name="C4">$(A*10)+5$ loaves of bread</choice>
+    <solutions>
+      <solution>
+        <repeat val="4" index="i">
+          <cond>
+            <choice_ref name="C$i+1$"/>==$(i)==(1)$
+          </cond>
+        </repeat>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1066M"></tutelage_ref>
+  </group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1067" width="200">
+  <params>
+    <param name="A" type="int"/>
+    <constraints>
+      <cond>1 &#60; A &#60; 9</cond>
+    </constraints>
+  </params>
+  <group>
+    <p>$(10*A)+5$ rounded to the nearest ten is <fib name="fib1" type="int"/>.</p>
+    <solutions>
+      <solution>
+        <cond><fib_ref name="fib1"/> == $(A+1)*10$</cond>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1067">
+      <bind name="A" val="A"/>
+    </tutelage_ref>
+  </group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1068" width="400">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+    <constraints>
+      <cond>2 &#60; A &#60; 9</cond>
+      <cond>3 &#60; B &#60; 6</cond>
+      <cond>1 &#60; C &#60; 5</cond>
+    </constraints>
+  </params>
+  <p>Mike had $(A*100)+(B*10)+C$ baseball cards.</p>
+  <group>
+    <p>The number of baseball cards, rounded to the nearest ten, is <fib name="fib1" type="int"/>.</p>
+    <solutions>
+      <solution>
+        <cond><fib_ref name="fib1"/> == $Math.round(A*10+B+C/10)*10$</cond>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1068G1">
+      <bind name="A" val="A"/>
+      <bind name="B" val="B"/>
+      <bind name="C" val="C"/>
+    </tutelage_ref>
+  </group>
+  <group>
+   <p>The number of baseball cards, rounded to the nearest hundred, is <fib name="fib2" type="int"/>.</p>
+   <solutions>
+    <solution>
+      <cond><fib_ref name="fib2"/> == $Math.round(A+B/10+C/100)*100$</cond>
+    </solution>
+  </solutions>
+  <tutelage_ref name="TU1068G2">
+    <bind name="A" val="A"/>
+    <bind name="B" val="B"/>
+    <bind name="C" val="C"/>
+  </tutelage_ref>
+</group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1069" width="400">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+    <constraints>
+      <cond>1 &#60; A &#60; 9</cond>
+      <cond>B &#61;&#61; 5</cond>
+      <cond>C &#61;&#61; 5</cond>
+    </constraints>
+  </params>
+  <p>Travis bought a watermelon with $(A*100)+(B*10)+C$ seeds.</p>
+  <group>
+    <p>The number of seeds, rounded to the nearest ten, is <fib name="fib1" type="int"/>.</p>
+    <solutions>
+      <solution>
+        <cond><fib_ref name="fib1"/> == $Math.round(A*10+B+C/10)*10$</cond>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1069G1">
+      <bind name="A" val="A"/>
+      <bind name="B" val="B"/>
+      <bind name="C" val="C"/>
+    </tutelage_ref>
+  </group>
+  <group>
+    <p>The number of seeds, rounded to the nearest hundred, is <fib name="fib2" type="int"/>.</p>
+    <solutions>
+      <solution>
+        <cond><fib_ref name="fib2"/> == $Math.round(A+B/10+C/100)*100$</cond>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1069G2">
+      <bind name="A" val="A"/>
+      <bind name="B" val="B"/>
+      <bind name="C" val="C"/>
+    </tutelage_ref>
+  </group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1070" width="300">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+    <constraints>
+      <cond>0 &#60; A &#60; 9</cond>
+      <cond>1 &#60; C &#60; 9</cond>
+      <cond>B &#61;&#61; 5</cond>
+    </constraints>
+  </params>
+  <p>Students in a class collected $$$(A*100)+(B*10)+(C)$ for the local animal shelter. Round the amount collected to the nearest hundred.</p>
+  <group name="PR1070" type="FIB">
+    <p>$$ <fib name="fib1" /></p>
+    <solutions>
+      <solution><cond><fib_ref name="fib1"/>==$(A+1)*100$</cond></solution>
+    </solutions>
+    <tutelage_ref name="TU1070">
+      <bind name="A" val="A"/>
+      <bind name="B" val="B"/>
+      <bind name="C" val="C"/>
+    </tutelage_ref>
+  </group>
+  <group name="PR1070" type="MCQ">
+    <choice name="C1">$$$(A+1)*100$</choice>
+    <choice name="C2">$$$A*100$</choice>
+    <choice name="C3">$$$(Math.round(A*10+B+C/10))*10$</choice>
+    <choice name="C4">$$$(A*100+B*10+C)$</choice>
+    <solutions>
+      <solution>
+        <repeat val="4" index="i">
+          <cond>
+            <choice_ref name="C$i+1$"/>==$(i)==(0)$
+          </cond>
+        </repeat>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1070M"></tutelage_ref>
+  </group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1071" width="500">
+  <p>Round the circled number on the number line to the nearest hundred.</p>
+  <p><img src="https://res.cloudinary.com/ansr/image/upload/v1562928171/Tutor/SH1001.svg" width="400px" alt="Number line for nearest hundred"/></p>
+  <group name="PR1071" type="FIB">
+    <p>About <fib name="fib1" /></p>
+    <solutions>
+      <solution><cond><fib_ref name="fib1"/>==400</cond></solution>
+    </solutions>
+    <tutelage_ref name="TU1071"></tutelage_ref>
+  </group>
+  <group name="PR1071" type="MCQ">
+    <choice name="C1">300</choice>
+    <choice name="C2">350</choice>
+    <choice name="C3">360</choice>
+    <choice name="C4">400</choice>
+    <solutions>
+      <solution>
+        <repeat val="4" index="i">
+          <cond>
+            <choice_ref name="C$i+1$"/>==$(i)==(3)$
+          </cond>
+        </repeat>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1071M"></tutelage_ref>
+  </group>
+</problem_tmpl>
+
+<problem_tmpl name="PR1072" width="300">
+  <params>
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+    <constraints>
+      <cond>2 &#60; A &#60; 9</cond>
+      <cond>20 &#60; (B &#215; 10 + C) &#60; 40</cond>
+    </constraints>
+  </params>
+  <group>
+    <p>What is $(A*100)+(B*10)+C$ rounded to the nearest hundred? <fib name="fib1" type="int"/></p>
+    <solutions>
+      <solution>
+        <cond><fib_ref name="fib1"/> == $A*100$</cond>
+      </solution>
+    </solutions>
+    <tutelage_ref name="TU1072">
+      <bind name="A" val="A"/>
+      <bind name="B" val="B"/>
+      <bind name="C" val="C"/>
+    </tutelage_ref>
+  </group>
+</problem_tmpl>
+
+<worksheet_tmpl name="WS109">
+
+ <problem_ref name="PR1065"/>
+
+ <problem_ref name="PR1066">
+  <bind name="A" val="8"/>
+  <bind name="B" val="6"/>
+</problem_ref>
+
+<problem_ref name="PR1067">
+  <bind name="A" val="5"/>
+</problem_ref>
+
+<problem_ref name="PR1068">
+  <bind name="A" val="8"/>
+  <bind name="B" val="5"/>
+  <bind name="C" val="2"/>
+</problem_ref>
+
+<problem_ref name="PR1069">
+  <bind name="A" val="6"/>
+  <bind name="B" val="5"/>
+  <bind name="C" val="5"/>
+</problem_ref>
+
+<problem_ref name="PR1070">
+  <bind name="A" val="4"/>
+  <bind name="B" val="5"/>
+  <bind name="C" val="3"/>
+</problem_ref>
+
+<problem_ref name="PR1071"/>
+
+<problem_ref name="PR1072">
+  <bind name="A" val="8"/>
+  <bind name="B" val="3"/>
+  <bind name="C" val="6"/>
+</problem_ref>
+</worksheet_tmpl>
+
+<worksheet_ref name="WS109"/>
+append_me 
