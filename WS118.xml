@@ -304,7 +304,7 @@
   </params>
   <p>The students of a third-grade class brought $A$ pies and $B$ tarts. How many items did they bring in total? Round to the nearest ten to estimate the sum. Then solve for the exact answer. </p>
   <group>
-    <p>Estimate: <fib name="fib1" type="int"/>items</p>
+    <p>Estimate: <fib type="int" name="fib1"/>items</p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/>==$((Math.round(A/10)+Math.round(B/10))*10)$</cond>
@@ -316,7 +316,7 @@
     </tutelage_ref>
   </group>
   <group>
-    <p>Exact: <fib name="fib2" type="int"/>items</p>
+    <p>Exact: <fib type="int" name="fib2"/>items</p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib2"/>==$(A+B)$</cond>
@@ -341,10 +341,9 @@
       <cond>(A % 10 + B % 10) &lt; 10</cond>
     </constraints>
   </params>
-  <p>Round to the nearest hundred to estimate the sum. Then solve for the exact answer.</p>
-  <p>$A$ + $B$</p>
+  <p>Round to the nearest hundred to estimate the sum. Then solve for the exact answer.</p><p>$A$ + $B$</p>
   <group>
-    <p>Estimate: <fib name="fib1" type="int"/></p>
+    <p>Estimate: <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/>==$((Math.round(A/100)+Math.round(B/100))*100)$</cond>
@@ -356,7 +355,7 @@
     </tutelage_ref>
   </group>
   <group>
-    <p>Exact: <fib name="fib2" type="int"/></p>
+    <p>Exact: <fib type="int" name="fib2"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib2"/>==$(A+B)$</cond>
@@ -381,10 +380,9 @@
       <cond>(A + B) &lt; 10</cond>
     </constraints>
   </params>
-  <p>Round each number to the nearest hundred to estimate the sum. Then solve for the exact answer.</p>
-  <p>$A$ + $B$</p>
+  <p>Round each number to the nearest hundred to estimate the sum. Then solve for the exact answer.</p><p>$A$ + $B$</p>
   <group>
-    <p>Estimate: <fib name="fib1" type="int"/></p>
+    <p>Estimate: <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/>==$((Math.round(A/100)+Math.round(B/100))*100)$</cond>
@@ -396,7 +394,7 @@
     </tutelage_ref>
   </group>
   <group>
-    <p>Exact: <fib name="fib2" type="int"/></p>
+    <p>Exact: <fib type="int" name="fib2"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib2"/>==$(A+B)$</cond>
@@ -421,7 +419,7 @@
   </params>
   <p>Round each number to the nearest ten to estimate the difference:</p>
   <group>
-    <p>$A$ &#8211; $B$ = About <fib name="fib1"/></p>
+    <p>$A$ &#8211; $B$ = About <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond>
@@ -450,7 +448,7 @@
   </params>
   <p>A class of third graders is going to a museum. They have traveled $A$ miles and have $B$ miles more to go. How far away is the museum? Round to the nearest ten to estimate the sum.</p>
   <group>
-    <p>Estimate: <fib name="fib1" type="int"/>miles away</p>
+    <p>Estimate: <fib type="int" name="fib1"/>miles away</p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/> == $((Math.round(A/10)+Math.round(B/10))*10)$</cond>
@@ -462,8 +460,7 @@
     </tutelage_ref>
   </group>
   <group>
-    <p>Now find the exact sum:</p>
-    <p>Exact: <fib name="fib2" type="int"/>miles away</p>
+    <p>Now find the exact sum:</p><p>Exact: <fib type="int" name="fib2"/>miles away</p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib2"/> == $(A+B)$</cond>
@@ -551,10 +548,9 @@
       <cond>((D &#215; 100) + (E &#215; 10) + F) &lt; ((A &#215; 100) + (B &#215; 10) + C)</cond>
     </constraints>
   </params>
-  <p>Use a number line to add the numbers:</p>
-  <p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1561368398/Tutor/SH1004.svg" width="500px"/></p>
+  <p>Use a number line to add the numbers:</p><p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1561368398/Tutor/SH1004.svg" width="500px"/></p>
   <group>
-    <p>$(A*100)+(B*10)+C$ + $(D*100)+(E*10)+F$ = <fib name="fib1"/></p>
+    <p>$(A*100)+(B*10)+C$ + $(D*100)+(E*10)+F$ = <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond>
@@ -585,7 +581,7 @@
   </params>
   <p>Joey has $A$ stickers. Jane has $B$ stickers. Estimate first and then solve for the exact answer.</p>
   <group>
-    <p>Joey has about <fib name="fib1" type="int"/>more stickers than Jane.</p>
+    <p>Joey has about <fib type="int" name="fib1"/>more stickers than Jane.</p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/>==$((Math.round(A/10) - Math.round(B/10))*10)$ || <fib_ref name="fib1"/>==$((Math.round(A/100) - Math.round(B/100))*100)$</cond>
@@ -597,7 +593,7 @@
     </tutelage_ref>
   </group>
   <group>
-    <p>Joey has exactly<fib name="fib2" type="int"/> more stickers than Jane.</p>
+    <p>Joey has exactly<fib type="int" name="fib2"/> more stickers than Jane.</p>
     <solutions>
       <solution>
         <cond> <fib_ref name="fib2"/>==$A-B$</cond>
@@ -645,4 +641,3 @@
   </problem_ref>
 </worksheet_tmpl>
 <worksheet_ref name="WS118"/>
-append_me 

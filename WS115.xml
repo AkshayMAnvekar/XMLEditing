@@ -289,7 +289,7 @@
 	</params>
 	<p>Jacob and Julie collected cans for recycling. Jacob collected $A$ cans, and Julie collected $B$ cans. About how many cans did they collect altogether?</p>
 	<group>
-		<p>About <fib name="fib1" type="int"/> cans</p>
+		<p>About <fib type="int" name="fib1"/> cans</p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$Math.round(A/10)*10+Math.round(B/10)*10$</cond>
@@ -311,10 +311,9 @@
 			<cond>B == 53</cond>
 		</constraints>
 	</params>
-	<p>A group of third graders picked $A$ apples from a farm, and their parents picked $B$ apples. How many apples did they pick in total. </p>
-	<p>Round the numbers to the nearest ten to estimate. Then solve for the exact answer</p>
+	<p>A group of third graders picked $A$ apples from a farm, and their parents picked $B$ apples. How many apples did they pick in total. </p><p>Round the numbers to the nearest ten to estimate. Then solve for the exact answer</p>
 	<group>
-		<p>Estimate: <fib name="fib1"/> apples</p>
+		<p>Estimate: <fib type="int" name="fib1"/> apples</p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$(Math.round(A/10)*10)+(Math.round(B/10)*10)$</cond>
@@ -326,7 +325,7 @@
 		</tutelage_ref>
 	</group>
 	<group>
-		<p>Exact: <fib name="fib2"/> apples</p>
+		<p>Exact: <fib type="int" name="fib2"/> apples</p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib2"/>==$A+B$</cond>
@@ -351,10 +350,9 @@
 			<cond>(B % 10) &#8800; 0</cond>
 		</constraints>
 	</params>
-	<p>Round each number to the nearest hundred to estimate the sum. Then solve for the exact answer.</p>
-	<p>$A$ + $B$</p>
+	<p>Round each number to the nearest hundred to estimate the sum. Then solve for the exact answer.</p><p>$A$ + $B$</p>
 	<group>
-		<p>Estimate: <fib name="fib1" type="int"/></p>
+		<p>Estimate: <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/> == $((Math.round(A/100)+Math.round(B/100))*100)$</cond>
@@ -366,7 +364,7 @@
 		</tutelage_ref>
 	</group>
 	<group>
-		<p>Exact: <fib name="fib2" type="int"/></p>
+		<p>Exact: <fib type="int" name="fib2"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib2"/> == $(A+B)$</cond>
@@ -391,8 +389,7 @@
 			<cond>(A - B) &gt; 10</cond>
 		</constraints>
 	</params>
-	<p>Nathan’s ice-cream parlor served $A$ cones of chocolate ice cream and $B$ cones of vanilla ice cream. About how many more cones of chocolate ice cream were served than those of vanilla ice cream?</p>
-	<p>Round to the nearest ten to estimate.</p>
+	<p>Nathan’s ice-cream parlor served $A$ cones of chocolate ice cream and $B$ cones of vanilla ice cream. About how many more cones of chocolate ice cream were served than those of vanilla ice cream?</p><p>Round to the nearest ten to estimate.</p>
 	<group name="PR1116" type="MCQ">
 		<choice name="C1">$Math.round(A/10)*10 + Math.round(B/10)*10$ cones</choice>
 		<choice name="C2">$Math.round(A/10)*10$ cones</choice>
@@ -410,7 +407,7 @@
 		<tutelage_ref name="TU1116M"></tutelage_ref>
 	</group>
 	<group name="PR1116" type="FIB">
-		<p>About <fib name="fib1"/> more cones of chocolate ice cream.</p>
+		<p>About <fib type="int" name="fib1"/> more cones of chocolate ice cream.</p>
 		<solutions>
 			<solution><cond><fib_ref name="fib1"/>==$Math.round(A/10)*10 - Math.round(B/10)*10$</cond></solution>
 		</solutions>
@@ -432,7 +429,7 @@
 	</params>
 	<p>Ronald had $$$A$. He then spent $$$B$ on clothes. About how much money does he have left? Estimate your answer by rounding each number to the nearest hundred. </p>
 	<group>
-		<p>He has about $$<fib name="fib1" type="int"/> left.</p>
+		<p>He has about $$<fib type="int" name="fib1"/> left.</p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/> == $$$A - Math.round(B/100)*100$</cond>
@@ -474,7 +471,7 @@
 		<tutelage_ref name="TU1118M"></tutelage_ref>
 	</group>
 	<group name="PR1118" type="FIB">
-		<p>$A$ - $B$ = About <fib name="fib1"/></p>
+		<p>$A$ - $B$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond>
@@ -508,7 +505,7 @@
 	</params>
 	<p>Fill in the blank to complete the equation.</p>
 	<group>
-		<p>$D*100+E*10+F$ + <fib name="fib1"/> = $A*100+B*10+C$</p>
+		<p>$D*100+E*10+F$ + <fib type="int" name="fib1"/> = $A*100+B*10+C$</p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$(A*100+B*10+C)-(D*100+E*10+F)$</cond>
@@ -544,7 +541,7 @@
 	</params>
 	<p>Find the missing addend</p>
 	<group>
-		<p>$D*100+E*10+F$ + <fib name="fib1"/> = $A*100+B*10+C$</p>
+		<p>$D*100+E*10+F$ + <fib type="int" name="fib1"/> = $A*100+B*10+C$</p>
 		<solutions>
 			<solution><cond><fib_ref name="fib1"/>==$A*100+B*10+C-(D*100+E*10+F)$</cond></solution>
 		</solutions>
@@ -602,4 +599,3 @@
 	</problem_ref>
 	</worksheet_tmpl>
 	<worksheet_ref name="WS115"/>
-append_me 

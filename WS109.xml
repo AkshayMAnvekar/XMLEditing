@@ -420,10 +420,9 @@
 </tutelage_tmpl>
 
 <problem_tmpl name="PR1065" width="600">
-  <p>Round the circled number on the number line to the nearest ten.</p>
-  <p><img src="https://res.cloudinary.com/ansr/image/upload/v1563182713/Tutor/SH1002.svg" width="400px" alt="Number line for nearest ten"/></p>
+  <p>Round the circled number on the number line to the nearest ten.</p><p><img src="https://res.cloudinary.com/ansr/image/upload/v1563182713/Tutor/SH1002.svg" width="400px" alt="Number line for nearest ten"/></p>
   <group name="PR1065" type="FIB">
-    <p><fib name="fib1" /></p>
+    <p><fib type="int" name="fib1"/></p>
     <solutions>
       <solution><cond><fib_ref name="fib1"/>==60</cond></solution>
     </solutions>
@@ -458,7 +457,7 @@
   </params>
   <p>A baker baked $(A*10)+B$ loaves of bread in a day. Round the number of loaves of bread to the nearest ten.</p>
   <group name="PR1066" type="FIB">
-    <p><fib name="fib1" /> loaves of bread</p>
+    <p><fib type="int" name="fib1"/> loaves of bread</p>
     <solutions>
       <solution><cond><fib_ref name="fib1"/>==$((A+1)*10)$</cond></solution>
     </solutions>
@@ -493,7 +492,7 @@
     </constraints>
   </params>
   <group>
-    <p>$(10*A)+5$ rounded to the nearest ten is <fib name="fib1" type="int"/>.</p>
+    <p>$(10*A)+5$ rounded to the nearest ten is <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/> == $(A+1)*10$</cond>
@@ -518,7 +517,7 @@
   </params>
   <p>Mike had $(A*100)+(B*10)+C$ baseball cards.</p>
   <group>
-    <p>The number of baseball cards, rounded to the nearest ten, is <fib name="fib1" type="int"/>.</p>
+    <p>The number of baseball cards, rounded to the nearest ten, is <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/> == $Math.round(A*10+B+C/10)*10$</cond>
@@ -531,7 +530,7 @@
     </tutelage_ref>
   </group>
   <group>
-   <p>The number of baseball cards, rounded to the nearest hundred, is <fib name="fib2" type="int"/>.</p>
+   <p>The number of baseball cards, rounded to the nearest hundred, is <fib type="int" name="fib2"/></p>
    <solutions>
     <solution>
       <cond><fib_ref name="fib2"/> == $Math.round(A+B/10+C/100)*100$</cond>
@@ -558,7 +557,7 @@
   </params>
   <p>Travis bought a watermelon with $(A*100)+(B*10)+C$ seeds.</p>
   <group>
-    <p>The number of seeds, rounded to the nearest ten, is <fib name="fib1" type="int"/>.</p>
+    <p>The number of seeds, rounded to the nearest ten, is <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/> == $Math.round(A*10+B+C/10)*10$</cond>
@@ -571,7 +570,7 @@
     </tutelage_ref>
   </group>
   <group>
-    <p>The number of seeds, rounded to the nearest hundred, is <fib name="fib2" type="int"/>.</p>
+    <p>The number of seeds, rounded to the nearest hundred, is <fib type="int" name="fib2"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib2"/> == $Math.round(A+B/10+C/100)*100$</cond>
@@ -598,7 +597,7 @@
   </params>
   <p>Students in a class collected $$$(A*100)+(B*10)+(C)$ for the local animal shelter. Round the amount collected to the nearest hundred.</p>
   <group name="PR1070" type="FIB">
-    <p>$$ <fib name="fib1" /></p>
+    <p>$$ <fib type="int" name="fib1"/></p>
     <solutions>
       <solution><cond><fib_ref name="fib1"/>==$(A+1)*100$</cond></solution>
     </solutions>
@@ -627,10 +626,9 @@
 </problem_tmpl>
 
 <problem_tmpl name="PR1071" width="500">
-  <p>Round the circled number on the number line to the nearest hundred.</p>
-  <p><img src="https://res.cloudinary.com/ansr/image/upload/v1562928171/Tutor/SH1001.svg" width="400px" alt="Number line for nearest hundred"/></p>
+  <p>Round the circled number on the number line to the nearest hundred.</p><p><img src="https://res.cloudinary.com/ansr/image/upload/v1562928171/Tutor/SH1001.svg" width="400px" alt="Number line for nearest hundred"/></p>
   <group name="PR1071" type="FIB">
-    <p>About <fib name="fib1" /></p>
+    <p>About <fib type="int" name="fib1"/></p>
     <solutions>
       <solution><cond><fib_ref name="fib1"/>==400</cond></solution>
     </solutions>
@@ -665,7 +663,7 @@
     </constraints>
   </params>
   <group>
-    <p>What is $(A*100)+(B*10)+C$ rounded to the nearest hundred? <fib name="fib1" type="int"/></p>
+    <p>What is $(A*100)+(B*10)+C$ rounded to the nearest hundred? <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/> == $A*100$</cond>
@@ -720,4 +718,3 @@
 </worksheet_tmpl>
 
 <worksheet_ref name="WS109"/>
-append_me 

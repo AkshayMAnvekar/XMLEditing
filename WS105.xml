@@ -237,8 +237,7 @@
 </tutelage_tmpl>
 
 <problem_tmpl name="PR1033" width="300">
-  <p>The number 970 can be written in word form as:
-  </p>
+  <p>The number 970 can be written in word form as:</p>
   <group>
     <choice name="C1">nine hundred seventy
     </choice>
@@ -252,7 +251,7 @@
       <solution>
         <repeat index="i" val="4">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(0)$
+            <choice_ref name="C$i+1$"/>==$(i)==(0)$
           </cond>
         </repeat>
       </solution>
@@ -262,20 +261,18 @@
 </problem_tmpl>
 <problem_tmpl name="PR1034" width="200">
   <params>
-    <param name="A" type="int" />
+    <param name="A" type="int"/>
     <constraints>
       <cond>3 &lt; A &lt; 9
       </cond>
     </constraints>
   </params>
   <group name="PR1034" type="FIB">
-    <p>$A$ tens can be written as 
-      <fib name="fib1" />.
-    </p>
+    <p>$A$ tens can be written as <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" />==$A*10$
+          <fib_ref name="fib1"/>==$A*10$
         </cond>
       </solution>
     </solutions>
@@ -284,8 +281,7 @@
     </tutelage_ref>
   </group>
   <group name="PR1034" type="MCQ">
-    <p>$A$ tens can be written as:
-    </p>
+    <p>$A$ tens can be written as:</p>
     <choice name="C1">$(A-1)*10$
     </choice>
     <choice name="C2">$A*10$
@@ -298,7 +294,7 @@
       <solution>
         <repeat index="i" val="4">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(1)$
+            <choice_ref name="C$i+1$"/>==$(i)==(1)$
           </cond>
         </repeat>
       </solution>
@@ -308,8 +304,8 @@
 </problem_tmpl>
 <problem_tmpl name="PR1035" width="300">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
     <constraints>
       <cond>0 &lt; A &lt; 10
       </cond>
@@ -319,15 +315,13 @@
       </cond>
     </constraints>
   </params>
-  <p>In the number  $(A*100)+B$:
-  </p>
+  <p>In the number  $(A*100)+B$:</p>
   <group>
-    <p>the digit  <fib name="fib1" type="int" /> is in the hundreds place 
-  </p>
+    <p>the digit <fib type="int" name="fib1"/> is in the hundreds place</p>
   <solutions>
     <solution>
       <cond>
-        <fib_ref name="fib1" /> == $A$
+        <fib_ref name="fib1"/> == $A$
       </cond>
     </solution>
   </solutions>
@@ -337,12 +331,11 @@
   </tutelage_ref>
 </group>
 <group>
- <p>the digit   <fib name="fib2" type="int" /> is in the tens place
-</p>
+ <p>the digit <fib type="int" name="fib2"/> is in the tens place</p>
 <solutions>
   <solution>
     <cond>
-      <fib_ref name="fib2" /> == $0$
+      <fib_ref name="fib2"/> == $0$
     </cond>
   </solution>
 </solutions>
@@ -352,12 +345,11 @@
 </tutelage_ref>
 </group>
 <group> 
-  <p>the digit <fib name="fib3" type="int" /> is in the ones place  
-</p>
+  <p>the digit <fib type="int" name="fib3"/> is in the ones place</p>
 <solutions>
   <solution>
     <cond>
-      <fib_ref name="fib3" /> == $B$
+      <fib_ref name="fib3"/> == $B$
     </cond>
   </solution>
 </solutions>
@@ -369,9 +361,9 @@
 </problem_tmpl>
 <problem_tmpl name="PR1036" width="300">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
-    <param name="C" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
     <constraints>
       <cond>134 &lt; A &lt; 140
       </cond>
@@ -381,9 +373,7 @@
       </cond>
     </constraints>
   </params>
-  <p>Tracy compared the heights of her cousins. Who is the tallest?
-    <br />
-  </p>
+  <p>Tracy compared the heights of her cousins. Who is the tallest?<br/></p>
   <table>
     <tr>
       <td>
@@ -425,7 +415,7 @@
       <solution>
         <repeat index="i" val="3">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(0)$
+            <choice_ref name="C$i+1$"/>==$(i)==(0)$
           </cond>
         </repeat>
       </solution>
@@ -434,8 +424,7 @@
   </group>
 </problem_tmpl>
 <problem_tmpl name="PR1037" width="400">
-  <p>The table shows the number of people who visited a fair from Monday to Friday. On which day did the fair have the greatest number of visitors?
-  </p>
+  <p>The table shows the number of people who visited a fair from Monday to Friday. On which day did the fair have the greatest number of visitors?</p>
   <table>
     <tr>
       <td>
@@ -493,7 +482,7 @@
       <solution>
         <repeat index="i" val="5">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(3)$
+            <choice_ref name="C$i+1$"/>==$(i)==(3)$
           </cond>
         </repeat>
       </solution>
@@ -503,10 +492,10 @@
 </problem_tmpl>
 <problem_tmpl name="PR1038" width="300">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
-    <param name="C" type="int" />
-    <param name="D" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
+    <param name="D" type="int"/>
     <constraints>
       <cond>A &gt; 99
       </cond>
@@ -520,8 +509,7 @@
       </cond>
     </constraints>
   </params>
-  <p>Which of the following is arranged from the greatest to the least?
-  </p>
+  <p>Which of the following is arranged from the greatest to the least?</p>
   <group>
     <choice name="C1">$B$, $C$, $A$, $D$
     </choice>
@@ -535,7 +523,7 @@
       <solution>
         <repeat index="i" val="4">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(1)$
+            <choice_ref name="C$i+1$"/>==$(i)==(1)$
           </cond>
         </repeat>
       </solution>
@@ -544,10 +532,8 @@
   </group>
 </problem_tmpl>
 <problem_tmpl name="PR1039" width="300">
-  <p>Which symbol will make the statement true?
-  </p>
-  <p>402 _____ Four hundred fifty
-  </p>
+  <p>Which symbol will make the statement true?</p>
+  <p>402 _____ Four hundred fifty</p>
   <group>
     <choice name="C1">&lt;
     </choice>
@@ -559,7 +545,7 @@
       <solution>
         <repeat index="i" val="3">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(0)$
+            <choice_ref name="C$i+1$"/>==$(i)==(0)$
           </cond>
         </repeat>
       </solution>
@@ -569,8 +555,8 @@
 </problem_tmpl>
 <problem_tmpl name="PR1040" width="200">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
     <constraints>
       <cond>38 &lt; A &lt; 43
       </cond>
@@ -578,10 +564,8 @@
       </cond>
     </constraints>
   </params>
-  <p>Which symbol will make the statement true?
-  </p>
-  <p>$A$ _____ $B$
-  </p>
+  <p>Which symbol will make the statement true?</p>
+  <p>$A$ _____ $B$</p>
   <group>
     <choice name="C1">&gt;
     </choice>
@@ -593,7 +577,7 @@
       <solution>
         <repeat index="i" val="3">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(2)$
+            <choice_ref name="C$i+1$"/>==$(i)==(2)$
           </cond>
         </repeat>
       </solution>
@@ -606,31 +590,31 @@
   <problem_ref name="PR1033">
   </problem_ref>
   <problem_ref name="PR1034">
-    <bind name="A" val="8" />
+    <bind name="A" val="8"/>
   </problem_ref>
   <problem_ref name="PR1035">
-    <bind name="A" val="1" />
-    <bind name="B" val="9" />
+    <bind name="A" val="1"/>
+    <bind name="B" val="9"/>
   </problem_ref>
   <problem_ref name="PR1036">
-    <bind name="A" val="136" />
-    <bind name="B" val="147" />
-    <bind name="C" val="142" />
+    <bind name="A" val="136"/>
+    <bind name="B" val="147"/>
+    <bind name="C" val="142"/>
   </problem_ref>
   <problem_ref name="PR1037">
   </problem_ref>
   <problem_ref name="PR1038">
-    <bind name="A" val="300" />
-    <bind name="B" val="302" />
-    <bind name="C" val="425" />
-    <bind name="D" val="580" />
+    <bind name="A" val="300"/>
+    <bind name="B" val="302"/>
+    <bind name="C" val="425"/>
+    <bind name="D" val="580"/>
   </problem_ref>
   <problem_ref name="PR1039">
   </problem_ref>
   <problem_ref name="PR1040">
-    <bind name="A" val="42" />
-    <bind name="B" val="45" />
+    <bind name="A" val="42"/>
+    <bind name="B" val="45"/>
   </problem_ref>
 
 </worksheet_tmpl>
-<worksheet_ref name="WS105" />append_me 
+<worksheet_ref name="WS105"/>

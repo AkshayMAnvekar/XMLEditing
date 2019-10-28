@@ -343,9 +343,9 @@
     <tutelage_ref name="TU1507M"></tutelage_ref>
   </group>
   <group name="PR1507" type="FIB">
-    <p><fib name="fib1" />students in total</p>
+    <p><fib type="int" name="fib1"/>students in total</p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$(A+C+1)*10$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$(A+C+1)*10$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1507">
       <bind name="A" val="A"/>
@@ -387,9 +387,9 @@
     <tutelage_ref name="TU1508M"></tutelage_ref>
   </group>
   <group name="PR1508" type="FIB">
-    <p><fib name="fib1" />crayons in total</p>
+    <p><fib type="int" name="fib1"/>crayons in total</p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$(A+D+1)*100$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$(A+D+1)*100$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1508">
       <bind name="A" val="A"/>
@@ -430,11 +430,11 @@
     <tutelage_ref name="TU1509M"></tutelage_ref>
   </group>
   <group name="PR1509" type="FIB">
-    <p>Ronald has about <fib name="fib1" /> more apples than Rita.</p>
+    <p>Ronald has about <fib type="int" name="fib1"/> more apples than Rita.</p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" />==$(A-(C+1))*10$
+          <fib_ref name="fib1"/>==$(A-(C+1))*10$
         </cond>
       </solution>
     </solutions>
@@ -480,9 +480,9 @@
 
   </group>
   <group name="PR1510" type="FIB">
-    <p>Jade sold about <fib name="fib1" />more T-shirts in June.</p>
+    <p>Jade sold about <fib type="int" name="fib1"/>more T-shirts in June.</p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$(A+1-D)*100$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$(A+1-D)*100$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1510">
       <bind name="A" val="A"/>
@@ -523,9 +523,9 @@
 
   </group>
   <group name="PR1511" type="FIB">
-    <p> <fib name="fib1" />pizzas in total</p>
+    <p> <fib type="int" name="fib1"/>pizzas in total</p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$A+B$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$A+B$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1511">
       <bind name="A" val="A"/>
@@ -562,9 +562,9 @@
 
   </group>
   <group name="PR1512" type="FIB">
-    <p>Richard should score <fib name="fib1" />more points.</p>
+    <p>Richard should score <fib type="int" name="fib1"/>more points.</p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$B-A$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$B-A$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1512">
       <bind name="A" val="A"/>
@@ -612,4 +612,3 @@
   </problem_ref>
 </worksheet_tmpl>
 <worksheet_ref name="WS152a"/>
-append_me 

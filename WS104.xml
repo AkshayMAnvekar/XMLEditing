@@ -247,8 +247,7 @@
 
 
 <problem_tmpl name="PR1025" width="300">
-  <p>The number 907 can be written in word form as:
-  </p>
+  <p>The number 907 can be written in word form as:</p>
   <group>
     <choice name="C1">nine hundred seventy
     </choice>
@@ -262,7 +261,7 @@
       <solution>
         <repeat index="i" val="4">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(2)$
+            <choice_ref name="C$i+1$"/>==$(i)==(2)$
           </cond>
         </repeat>
       </solution>
@@ -272,9 +271,9 @@
 </problem_tmpl>
 <problem_tmpl name="PR1026" width="200">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
-    <param name="C" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
     <constraints>
       <cond>1 &lt; A &lt; 9
       </cond>
@@ -291,14 +290,11 @@
     </constraints>
   </params>
   <group>
-    <p>What is $A$ hundreds,$B+10$ tens, and $C$ ones in standard form?
-      <fib name="fib1" />
-      <br />
-    </p>
+    <p>What is $A$ hundreds,$B+10$ tens, and $C$ ones in standard form? <fib type="int" name="fib1"/><br/></p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" />==$A*100+(B+10)*10+C$
+          <fib_ref name="fib1"/>==$A*100+(B+10)*10+C$
         </cond>
       </solution>
     </solutions>
@@ -311,9 +307,9 @@
 </problem_tmpl>
 <problem_tmpl name="PR1027" width="350">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
-    <param name="C" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
     <constraints>
       <cond>0 &lt; A &lt; 10
       </cond>
@@ -329,16 +325,13 @@
       </cond>
     </constraints>
   </params>
-  <p>Raj has $C$ ones. How many tens does Raj need to make the number $(A*100)+(B*10)+C$?
-  </p>
+  <p>Raj has $C$ ones. How many tens does Raj need to make the number $(A*100)+(B*10)+C$?</p>
   <group>
-    <p>$(A*100)+(B*10)+C$ = 
-      <fib name="fib1" type="int" /> tens + $C$ ones
-    </p>
+    <p>$(A*100)+(B*10)+C$ = <fib type="int" name="fib1"/> tens + $C$ ones</p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" />==$(A*10)+(B)$
+          <fib_ref name="fib1"/>==$(A*10)+(B)$
         </cond>
       </solution>
     </solutions>
@@ -350,8 +343,8 @@
 </problem_tmpl>
 <problem_tmpl name="PR1028" width="300">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
     <constraints>
       <cond>0 &lt; A &lt; 10
       </cond>
@@ -362,17 +355,14 @@
     </constraints>
   </params>
   <group>
-    <p>The number $(A*100)+(B*10)$ can be written in expanded form as 
-      <fib name="fib1" type="int" /> + 
-      <fib name="fib2" type="int" />.
-    </p>
+    <p>The number $(A*100)+(B*10)$ can be written in expanded form as <fib type="int" name="fib1"/>+<fib type="int" name="fib2"/></p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" /> == $A*100$
+          <fib_ref name="fib1"/> == $A*100$
         </cond>
         <cond>
-          <fib_ref name="fib2" /> == $B*10$
+          <fib_ref name="fib2"/> == $B*10$
         </cond>
       </solution>
     </solutions>
@@ -384,9 +374,9 @@
 </problem_tmpl>
 <problem_tmpl name="PR1029" width="200">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
-    <param name="C" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
     <constraints>
       <cond>0 &lt; A &lt; 10
       </cond>
@@ -403,13 +393,11 @@
     </constraints>
   </params>
   <group name="PR1029" type="FIB">
-    <p>What is the least possible number that can be made from the digits $C$, $B$, and $A$? 
-      <fib name="fib1" />
-    </p>
+    <p>What is the least possible number that can be made from the digits $C$, $B$, and $A$? <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" />==$(A*100)+(B*10)+C$
+          <fib_ref name="fib1"/>==$(A*100)+(B*10)+C$
         </cond>
       </solution>
     </solutions>
@@ -422,9 +410,9 @@
 </problem_tmpl>
 <problem_tmpl name="PR1030" width="200">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
-    <param name="C" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
     <constraints>
       <cond>0 &lt; A &lt; 10
       </cond>
@@ -440,17 +428,14 @@
       </cond>
     </constraints>
   </params>
-  <p>Fill in the blanks to make true statements.
-  </p>
+  <p>Fill in the blanks to make true statements.</p>
   <group>
-    <p>$(A*100)+(B*10)+C$ &lt; 
-      <fib name="fib1" type="int" />
-    </p>
+    <p>$(A*100)+(B*10)+C$ &lt; <fib type="int" name="fib1"/></p>
     
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" /> &gt; $(A*100)+(B*10)+C$
+          <fib_ref name="fib1"/> &gt; $(A*100)+(B*10)+C$
         </cond>
         
       </solution>
@@ -463,13 +448,11 @@
   </group>
   <br/>
   <group>
-    <p>$(A*100)+(B*10)+C$ &gt; 
-      <fib name="fib2" type="int" />
-    </p>
+    <p>$(A*100)+(B*10)+C$ &gt; <fib type="int" name="fib2"/></p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib2" /> &lt; $(A*100)+(B*10)+C$
+          <fib_ref name="fib2"/> &lt; $(A*100)+(B*10)+C$
         </cond>
         
       </solution>
@@ -486,9 +469,9 @@
 </problem_tmpl>
 <problem_tmpl name="PR1031" width="300">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
-    <param name="C" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
     <constraints>
       <cond>134 &lt; A &lt; 140
       </cond>
@@ -498,9 +481,7 @@
       </cond>
     </constraints>
   </params>
-  <p>Tracy compared the heights of her cousins. Who is the shortest?
-    <br />
-  </p>
+  <p>Tracy compared the heights of her cousins. Who is the shortest?<br/></p>
   <table>
     <tr>
       <td>
@@ -514,24 +495,21 @@
     </tr>
     <tr>
       <td>
-        <p>Shawn
-        </p>
+        <p>Shawn</p>
       </td>
       <td>$A$
       </td>
     </tr>
     <tr>
       <td>
-        <p>Mia
-        </p>
+        <p>Mia</p>
       </td>
       <td>$B$
       </td>
     </tr>
     <tr>
       <td>
-        <p>Peter
-        </p>
+        <p>Peter</p>
       </td>
       <td>$C$
       </td>
@@ -548,7 +526,7 @@
       <solution>
         <repeat index="i" val="3">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(1)$
+            <choice_ref name="C$i+1$"/>==$(i)==(1)$
           </cond>
         </repeat>
       </solution>
@@ -557,8 +535,7 @@
   </group>
 </problem_tmpl>
 <problem_tmpl name="PR1032" width="400">
-  <p>The table shows the number of people who visited a fair from Monday to Friday. On which day did the fair have the fewest visitors?
-  </p>
+  <p>The table shows the number of people who visited a fair from Monday to Friday. On which day did the fair have the fewest visitors?</p>
   <table>
     <tr>
       <td>
@@ -572,40 +549,35 @@
     </tr>
     <tr>
       <td>
-        <p>Monday
-        </p>
+        <p>Monday</p>
       </td>
       <td>315
       </td>
     </tr>
     <tr>
       <td>
-        <p>Tuesday
-        </p>
+        <p>Tuesday</p>
       </td>
       <td>321
       </td>
     </tr>
     <tr>
       <td>
-        <p>Wednesday
-        </p>
+        <p>Wednesday</p>
       </td>
       <td>292
       </td>
     </tr>
     <tr>
       <td>
-        <p>Thursday
-        </p>
+        <p>Thursday</p>
       </td>
       <td>382
       </td>
     </tr>
     <tr>
       <td>
-        <p>Friday
-        </p>
+        <p>Friday</p>
       </td>
       <td>283
       </td>
@@ -626,7 +598,7 @@
       <solution>
         <repeat index="i" val="5">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(4)$
+            <choice_ref name="C$i+1$"/>==$(i)==(4)$
           </cond>
         </repeat>
       </solution>
@@ -640,36 +612,36 @@
   <problem_ref name="PR1025">
   </problem_ref>
   <problem_ref name="PR1026">
-    <bind name="A" val="6" />
-    <bind name="B" val="4" />
-    <bind name="C" val="9" />
+    <bind name="A" val="6"/>
+    <bind name="B" val="4"/>
+    <bind name="C" val="9"/>
   </problem_ref>
   <problem_ref name="PR1027">
-    <bind name="A" val="9" />
-    <bind name="B" val="4" />
-    <bind name="C" val="7" />
+    <bind name="A" val="9"/>
+    <bind name="B" val="4"/>
+    <bind name="C" val="7"/>
   </problem_ref>
   <problem_ref name="PR1028">
-    <bind name="A" val="3" />
-    <bind name="B" val="5" />
+    <bind name="A" val="3"/>
+    <bind name="B" val="5"/>
   </problem_ref>
   <problem_ref name="PR1029">
-    <bind name="A" val="4" />
-    <bind name="B" val="5" />
-    <bind name="C" val="9" />
+    <bind name="A" val="4"/>
+    <bind name="B" val="5"/>
+    <bind name="C" val="9"/>
   </problem_ref>
   <problem_ref name="PR1030">
-    <bind name="A" val="2" />
-    <bind name="B" val="1" />
-    <bind name="C" val="8" />
+    <bind name="A" val="2"/>
+    <bind name="B" val="1"/>
+    <bind name="C" val="8"/>
   </problem_ref>
   <problem_ref name="PR1031">
-    <bind name="A" val="136" />
-    <bind name="B" val="147" />
-    <bind name="C" val="142" />
+    <bind name="A" val="136"/>
+    <bind name="B" val="147"/>
+    <bind name="C" val="142"/>
   </problem_ref>
   <problem_ref name="PR1032">
   </problem_ref>
   
 </worksheet_tmpl>
-<worksheet_ref name="WS104" />append_me 
+<worksheet_ref name="WS104"/>

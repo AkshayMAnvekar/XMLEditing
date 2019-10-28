@@ -342,7 +342,7 @@
 		<tutelage_ref name="TU1073M"></tutelage_ref>
 	</group>
 	<group name="PR1073" type="FIB">
-		<p>$(A*10)+1$ + $(B*10)+1$ = About <fib name="fib1"/></p>
+		<p>$(A*10)+1$ + $(B*10)+1$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$(A+B)*10$</cond>
@@ -365,10 +365,9 @@
 			<cond>(A + B) &lt; 1000</cond>
 		</constraints>
 	</params>
-	<p>Round each number to the nearest hundred to estimate the sum:</p>
-	<p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1561368398/Tutor/SH1004.svg" width="500px"/></p>
+	<p>Round each number to the nearest hundred to estimate the sum:</p><p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1561368398/Tutor/SH1004.svg" width="500px"/></p>
 	<group>
-		<p>$A$ + $B$ = About <fib name="fib1"/></p>
+		<p>$A$ + $B$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$Math.round(A/100)*100+Math.round(B/100)*100$</cond>
@@ -415,7 +414,7 @@
 		<tutelage_ref name="TU1075M"></tutelage_ref>
 	</group>
 	<group name="PR1075" type="FIB">
-		<p><fib name="fib1"/> seeds</p>
+		<p><fib type="int" name="fib1"/> seeds</p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$((Math.round(A/100)+Math.round(B/100))*100)$</cond>
@@ -457,7 +456,7 @@
 		<tutelage_ref name="TU1076M"></tutelage_ref>
 	</group>
 	<group name="PR1076" type="FIB">
-		<p>$(A*10)+1$ - $(B*10)+1$ = About <fib name="fib1"/></p>
+		<p>$(A*10)+1$ - $(B*10)+1$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$(A-B)*10$</cond>
@@ -499,7 +498,7 @@
 		<tutelage_ref name="TU1077M"></tutelage_ref>
 	</group>
 	<group name="PR1077" type="FIB">
-		<p>Robert has about <fib name="fib1"/> more balloons.</p>
+		<p>Robert has about <fib type="int" name="fib1"/> more balloons.</p>
 		<solutions>
 			<solution>
 				<cond>
@@ -542,7 +541,7 @@
 		<tutelage_ref name="TU1078M"></tutelage_ref>
 	</group>
 	<group name="PR1078" type="FIB">
-		<p><fib name="fib1"/> nails</p>
+		<p><fib type="int" name="fib1"/> nails</p>
 		<solutions>
 			<solution>
 				<cond>
@@ -568,8 +567,7 @@
 		</constraints>
 	</params>
 	<group>
-		<p>Find the sum:</p>
-		<p>$A$ + $B$ = <fib name="fib1"/><br/></p>
+		<p>Find the sum:</p><p>$A$ + $B$ = <fib type="int" name="fib1"/><br/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$A+B$</cond>
@@ -596,7 +594,7 @@
 	</params>
 	<p>Find the difference:</p>
 	<group>
-		<p>$(A*100)+(B*10)+C$ - 220 = <fib name="fib1"/></p>
+		<p>$(A*100)+(B*10)+C$ - 220 = <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond>
@@ -656,4 +654,3 @@
 	</problem_ref>
 
 </worksheet_tmpl><worksheet_ref name="WS110"/>
-append_me 

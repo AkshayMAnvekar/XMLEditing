@@ -474,11 +474,11 @@
     <tutelage_ref name="TU1513M"></tutelage_ref>
   </group>
   <group name="PR1513" type="FIB">
-    <p>The standard form of $A$ hundreds, $B-1$ tens, and $C+10$ ones is <fib name="fib1" />.</p>
+    <p>The standard form of $A$ hundreds, $B-1$ tens, and $C+10$ ones is <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" />==$(A*100 + B*10 + C)$
+          <fib_ref name="fib1"/>==$(A*100 + B*10 + C)$
         </cond>
       </solution>
     </solutions>
@@ -519,11 +519,11 @@
     <tutelage_ref name="TU1514M"></tutelage_ref>
   </group>
   <group name="PR1514" type="FIB">
-    <p>The expanded form of $A*100+B*10+C$ is <fib name="fib1" /> + <fib name="fib2" /> + <fib name="fib3" />.</p>
+    <p>The expanded form of $A*100+B*10+C$ is <fib type="int" name="fib1"/>+<fib type="int" name="fib2"/>+<fib type="int" name="fib3"/></p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$A*100$</cond></solution>
-      <solution><cond><fib_ref name="fib2" />==$B*10$</cond></solution>
-      <solution><cond><fib_ref name="fib3" />==$C$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$A*100$</cond></solution>
+      <solution><cond><fib_ref name="fib2"/>==$B*10$</cond></solution>
+      <solution><cond><fib_ref name="fib3"/>==$C$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1514">
       <bind name="A" val="A"/>
@@ -561,8 +561,7 @@
       <cond>A &#60; B</cond>
     </constraints>
   </params>
-  <p>Which symbol will make the statement true?</p>
-  <p>$A$ _____ $B$</p>
+  <p>Which symbol will make the statement true?</p><p>$A$ _____ $B$</p>
   <group>
     <choice name="C1">&#60;</choice>
     <choice name="C2">&#62;</choice>
@@ -604,9 +603,9 @@
     <tutelage_ref name="TU1517M"></tutelage_ref>
   </group>
   <group name="PR1517" type="FIB">
-    <p><fib name="fib1" />shirts</p>
+    <p><fib type="int" name="fib1"/>shirts</p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$(A+1)*10$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$(A+1)*10$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1517">
       <bind name="A" val="A"/>
@@ -625,7 +624,7 @@
       <cond>1 &#60; C &#60; 10</cond>
     </constraints>
   </params>
-  <p>$A*100+B*10+C$ guests attended John’s wedding. Round the number of guests  to the nearest hundred.</p>
+  <p>$A*100+B*10+C$ guests attended John’s wedding. Round the number of guests to the nearest hundred.</p>
   <group name="PR1518" type="MCQ">
     <choice name="C1">$A*100$ guests</choice>
     <choice name="C2">$(A+1)*100$ guests</choice>
@@ -641,9 +640,9 @@
     <tutelage_ref name="TU1518M"></tutelage_ref>
   </group>
   <group name="PR1518" type="FIB">
-    <p><fib name="fib1" />guests.</p>
+    <p><fib type="int" name="fib1"/>guests.</p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$(A+1)*100$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$(A+1)*100$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1518">
       <bind name="A" val="A"/>
@@ -681,9 +680,9 @@
     <tutelage_ref name="TU1519M"></tutelage_ref>
   </group>
   <group name="PR1519" type="FIB">
-    <p><fib name="fib1" />ice-cream cones in total</p>
+    <p><fib type="int" name="fib1"/>ice-cream cones in total</p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$A*10+(C+1)*10$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$A*10+(C+1)*10$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1519">
       <bind name="A" val="A"/>
@@ -721,9 +720,9 @@
     <tutelage_ref name="TU1520M"></tutelage_ref>
   </group>
   <group name="PR1520" type="FIB">
-    <p>Sara has about $$<fib name="fib1" />left.</p>
+    <p>Sara has about $$<fib type="int" name="fib1"/>left.</p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$(A-(C+1))*10$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$(A-(C+1))*10$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1520">
       <bind name="A" val="A"/>
@@ -863,4 +862,3 @@
   </problem_ref>
 </worksheet_tmpl>
 <worksheet_ref name="WS153a"/>
-append_me 

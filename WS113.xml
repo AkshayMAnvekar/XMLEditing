@@ -262,8 +262,8 @@
 
 <problem_tmpl name="PR1097" width="500">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
 		<constraints>
 			<cond>26 &lt; A &lt; 67</cond>
 			<cond>22 &lt; B &lt; 48</cond>
@@ -273,13 +273,12 @@
 			<cond>((A % 10) + (B % 10)) &lt; 10</cond>
 		</constraints>
 	</params>
-	<p>Lisa has $A$ red blocks and $B$ blue blocks. Round each number to the nearest ten. About how many blocks does she have in total?</p>
-	<p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1560510016/Tutor/SH1003.svg" width="500px" /></p>
+	<p>Lisa has $A$ red blocks and $B$ blue blocks. Round each number to the nearest ten. About how many blocks does she have in total?</p><p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1560510016/Tutor/SH1003.svg" width="500px"/></p>
 	<group>
-		<p>Lisa has about <fib name="fib1" type="int" /> blocks in total.</p>
+		<p>Lisa has about <fib type="int" name="fib1"/> blocks in total.</p>
 		<solutions>
 			<solution>
-				<cond><fib_ref name="fib1" />==$Math.round(A/10)*10+Math.round(B/10)*10$</cond>
+				<cond><fib_ref name="fib1"/>==$Math.round(A/10)*10+Math.round(B/10)*10$</cond>
 			</solution>
 		</solutions>
     <tutelage_ref name="TU1097">
@@ -290,8 +289,8 @@
 </problem_tmpl>
 <problem_tmpl name="PR1098" width="400">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
 		<constraints>
 			<cond>680 &lt; A &lt; 720</cond>
 			<cond>280 &lt; B &lt; 320</cond>
@@ -300,13 +299,12 @@
 			<cond>(A+B) &lt; 1000 </cond>
 		</constraints>
 	</params>
-	<p>Estimate the sum by rounding each number to the nearest hundred. Then solve for the exact answer.</p>
-	<p>$A$ + $B$</p>
+	<p>Estimate the sum by rounding each number to the nearest hundred. Then solve for the exact answer.</p><p>$A$ + $B$</p>
 	<group>
-		<p>Estimate: <fib name="fib1" type="int" /></p>
+		<p>Estimate: <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
-				<cond><fib_ref name="fib1" />==$((Math.round(A/100)+Math.round(B/100))*100)$</cond>
+				<cond><fib_ref name="fib1"/>==$((Math.round(A/100)+Math.round(B/100))*100)$</cond>
 			</solution>
 		</solutions>
     <tutelage_ref name="TU1098G1">
@@ -315,10 +313,10 @@
     </tutelage_ref>
 	</group>
   <group>
-    <p>Exact: <fib name="fib2" type="int" /></p>
+    <p>Exact: <fib type="int" name="fib2"/></p>
     <solutions>
       <solution>
-        <cond><fib_ref name="fib2" />==$(A+B)$</cond>
+        <cond><fib_ref name="fib2"/>==$(A+B)$</cond>
       </solution>
     </solutions>
     <tutelage_ref name="TU1098G2">
@@ -329,8 +327,8 @@
 </problem_tmpl>
 <problem_tmpl name="PR1099" width="500">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
 		<constraints>
 			<cond>110 &lt; A &lt; 160</cond>
 			<cond>240 &lt; B &lt; 350</cond>
@@ -338,14 +336,13 @@
 			<cond>(Math.floor(B &#247; 10) % 10 == 2) || (Math.floor(B &#247; 10) % 10 == 3) || (Math.floor(B &#247; 10) % 10 == 6) || (Math.floor(B &#247; 10) % 10 == 7)</cond>
 		</constraints>
 	</params>
-	<p>Salim wants to buy a video game that costs $$$A$ and a new bike that costs $$$B$. How much will it cost to buy both?</p>
-	<p>Use the number line to estimate your answer by rounding each number to the nearest hundred.</p>
-	<p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1561368398/Tutor/SH1004.svg" width="500px" /></p>
+	<p>Salim wants to buy a video game that costs $$$A$ and a new bike that costs $$$B$. How much will it cost to buy both?</p><p>Use the number line to estimate your answer by rounding each number to the nearest hundred.</p>
+	<p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1561368398/Tutor/SH1004.svg" width="500px"/></p>
 	<group>
-		<p>It will cost about $$<fib name="fib1" /> in total.</p>
+		<p>It will cost about $$<fib type="int" name="fib1"/> in total.</p>
 		<solutions>
 			<solution>
-				<cond><fib_ref name="fib1" />==$(Math.round(A/100)*100)+(Math.round(B/100)*100)$</cond>
+				<cond><fib_ref name="fib1"/>==$(Math.round(A/100)*100)+(Math.round(B/100)*100)$</cond>
 			</solution>
 		</solutions>
     <tutelage_ref name="TU1099G1">
@@ -360,7 +357,7 @@
 		<solutions>
 			<solution>
 				<repeat index="i" val="2">
-					<cond><choice_ref name="C$i+1$" />==$(i)==(0)$</cond>
+					<cond><choice_ref name="C$i+1$"/>==$(i)==(0)$</cond>
 				</repeat>
 			</solution>
 		</solutions>
@@ -369,8 +366,8 @@
 </problem_tmpl>
 <problem_tmpl name="PR1100" width="300">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
 		<constraints>
 			<cond>A &gt; B</cond>
 			<cond>B &gt; 10</cond>
@@ -380,9 +377,9 @@
 	</params>
 	<p>Round each number to the nearest ten to estimate the difference:</p>
 	<group>
-		<p>$A$ - $B$ = About <fib name="fib1" /></p>
+		<p>$A$ - $B$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
-			<solution><cond><fib_ref name="fib1" />==$(Math.round(A/10)-Math.round(B/10))*10$</cond></solution>
+			<solution><cond><fib_ref name="fib1"/>==$(Math.round(A/10)-Math.round(B/10))*10$</cond></solution>
 		</solutions>
     <tutelage_ref name="TU1100">
       <bind name="A" val="A"/>
@@ -392,10 +389,10 @@
 </problem_tmpl>
 <problem_tmpl name="PR1101" width="300">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
-		<param name="C" type="int" />
-		<param name="D" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<param name="C" type="int"/>
+		<param name="D" type="int"/>
 		<constraints>
 			<cond>(A &#215; 10 + B) &gt; (C &#215; 10 + D)</cond>
 			<cond>10 &gt; A &gt; 7</cond>
@@ -414,16 +411,16 @@
 		<solutions>
 			<solution>
 				<repeat index="i" val="4">
-					<cond><choice_ref name="C$i+1$" />==$(i)==(1)$</cond>
+					<cond><choice_ref name="C$i+1$"/>==$(i)==(1)$</cond>
 				</repeat>
 			</solution>
 		</solutions>
     <tutelage_ref name="TU1101M"></tutelage_ref>
 	</group>
   <group name="PR1101" type="FIB">
-		<p>$(A*10)+B$ - $(C*10)+D$ = About <fib name="fib1" /></p>
+		<p>$(A*10)+B$ - $(C*10)+D$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
-			<solution><cond><fib_ref name="fib1" />==$(Math.round((A*10+B)/10) - Math.round((C*10+D)/10))*10$</cond></solution>
+			<solution><cond><fib_ref name="fib1"/>==$(Math.round((A*10+B)/10) - Math.round((C*10+D)/10))*10$</cond></solution>
 		</solutions>
     <tutelage_ref name="TU1101">
       <bind name="A" val="A"/>
@@ -435,8 +432,8 @@
 </problem_tmpl>
 <problem_tmpl name="PR1102" width="300">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
 		<constraints>
 			<cond>700 &lt; A &lt; 950</cond>
 			<cond>300 &lt; B &lt; 600</cond>
@@ -456,16 +453,16 @@
 		<solutions>
 			<solution>
 				<repeat index="i" val="4">
-					<cond><choice_ref name="C$i+1$" />==$(i)==(0)$</cond>
+					<cond><choice_ref name="C$i+1$"/>==$(i)==(0)$</cond>
 				</repeat>
 			</solution>
 		</solutions>
     <tutelage_ref name="TU1102M"></tutelage_ref>
 	</group>
   <group name="PR1102" type="FIB">
-		<p>$A$ - $B$ = About <fib name="fib1" /></p>
+		<p>$A$ - $B$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
-			<solution><cond><fib_ref name="fib1" />==$(Math.round(A/10) - Math.round(B/10))*10$</cond></solution>
+			<solution><cond><fib_ref name="fib1"/>==$(Math.round(A/10) - Math.round(B/10))*10$</cond></solution>
 		</solutions>
     <tutelage_ref name="TU1102">
       <bind name="A" val="A"/>
@@ -475,12 +472,12 @@
 </problem_tmpl>
 <problem_tmpl name="PR1103" width="300">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
-		<param name="C" type="int" />
-		<param name="D" type="int" />
-		<param name="E" type="int" />
-		<param name="F" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<param name="C" type="int"/>
+		<param name="D" type="int"/>
+		<param name="E" type="int"/>
+		<param name="F" type="int"/>
 		<constraints>
 			<cond>(A &#215; 100) + (B &#215; 10) + C &gt; (D &#215; 100) + (E &#215; 10) + F</cond>
 			<cond>10 &gt; A &gt; 7</cond>
@@ -492,9 +489,9 @@
 		</constraints>
 	</params>
 	<group>
-		<p>Find the difference: $(A*100)+(B*10)+C$ - $(D*100)+(E*10)+F$ = <fib name="fib1" />.</p>
+		<p>Find the difference: $(A*100)+(B*10)+C$ - $(D*100)+(E*10)+F$ = <fib type="int" name="fib1"/></p>
 		<solutions>
-			<solution><cond><fib_ref name="fib1" />==$((A*100)+(B*10)+C) - ((D*100)+(E*10)+F)$</cond></solution>
+			<solution><cond><fib_ref name="fib1"/>==$((A*100)+(B*10)+C) - ((D*100)+(E*10)+F)$</cond></solution>
 		</solutions>
     <tutelage_ref name="TU1103">
       <bind name="A" val="A"/>
@@ -508,8 +505,8 @@
 </problem_tmpl>
 <problem_tmpl name="PR1104" width="300">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
 		<constraints>
 			<cond>700 &lt; A &lt; 990</cond>
 			<cond>150 &lt; B &lt; 300</cond>
@@ -518,13 +515,13 @@
 	</params>
 	<p>$A$ ants are climbing a hill. $B$ spiders are climbing the same hill.</p>
 	<group>
-		<p>There are about<fib name="fib1" type="int" /> more ants than there are spiders.</p>
+		<p>There are about<fib type="int" name="fib1"/> more ants than there are spiders.</p>
 		<solutions>
 			<solution>
-				<cond><fib_ref name="fib1" />==$(Math.round(A/100)*100-Math.round(B/100)*100)$</cond>
+				<cond><fib_ref name="fib1"/>==$(Math.round(A/100)*100-Math.round(B/100)*100)$</cond>
 			</solution>
 			<solution>
-				<cond><fib_ref name="fib1" />==$(Math.round(A/10)*10-Math.round(B/10)*10)$</cond>
+				<cond><fib_ref name="fib1"/>==$(Math.round(A/10)*10-Math.round(B/10)*10)$</cond>
 			</solution>
 		</solutions>
     <tutelage_ref name="TU1104">
@@ -536,43 +533,42 @@
 
 <worksheet_tmpl name="WS113">
 	<problem_ref name="PR1097">
-		<bind name="A" val="46" />
-		<bind name="B" val="33" />
+		<bind name="A" val="46"/>
+		<bind name="B" val="33"/>
 	</problem_ref>
 	<problem_ref name="PR1098">
-		<bind name="A" val="603" />
-		<bind name="B" val="296" />
+		<bind name="A" val="603"/>
+		<bind name="B" val="296"/>
 	</problem_ref>
 	<problem_ref name="PR1099">
-		<bind name="A" val="123" />
-		<bind name="B" val="266" />
+		<bind name="A" val="123"/>
+		<bind name="B" val="266"/>
 	</problem_ref>
 	<problem_ref name="PR1100">
-		<bind name="A" val="66" />
-		<bind name="B" val="14" />
+		<bind name="A" val="66"/>
+		<bind name="B" val="14"/>
 	</problem_ref>
 	<problem_ref name="PR1101">
-		<bind name="A" val="8" />
-		<bind name="B" val="8" />
-		<bind name="C" val="3" />
-		<bind name="D" val="7" />
+		<bind name="A" val="8"/>
+		<bind name="B" val="8"/>
+		<bind name="C" val="3"/>
+		<bind name="D" val="7"/>
 	</problem_ref>
 	<problem_ref name="PR1102">
-		<bind name="A" val="874" />
-		<bind name="B" val="461" />
+		<bind name="A" val="874"/>
+		<bind name="B" val="461"/>
 	</problem_ref>
 	<problem_ref name="PR1103">
-		<bind name="A" val="7" />
-		<bind name="B" val="6" />
-		<bind name="C" val="8" />
-		<bind name="D" val="2" />
-		<bind name="E" val="1" />
-		<bind name="F" val="7" />
+		<bind name="A" val="7"/>
+		<bind name="B" val="6"/>
+		<bind name="C" val="8"/>
+		<bind name="D" val="2"/>
+		<bind name="E" val="1"/>
+		<bind name="F" val="7"/>
 	</problem_ref>
 	<problem_ref name="PR1104">
-		<bind name="A" val="982" />
-		<bind name="B" val="281" />
+		<bind name="A" val="982"/>
+		<bind name="B" val="281"/>
 	</problem_ref>
 
-</worksheet_tmpl><worksheet_ref name="WS113" />
-append_me 
+</worksheet_tmpl><worksheet_ref name="WS113"/>

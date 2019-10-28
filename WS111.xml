@@ -346,7 +346,7 @@
     <tutelage_ref name="TU1081M"></tutelage_ref>
   </group>
   <group name="PR1081" type="FIB">
-    <p>$(A*10)+9$ + $(B*10)+9$ = About <fib name="fib1"/></p>
+    <p>$(A*10)+9$ + $(B*10)+9$ = About <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/>==$(A+1)*10+(B+1)*10$</cond>
@@ -391,7 +391,7 @@
     <tutelage_ref name="TU1082M"></tutelage_ref>
   </group>
   <group name="PR1082" type="FIB">
-    <p>$A$ + $B$ = About <fib name="fib1"/></p>
+    <p>$A$ + $B$ = About <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/>==$Math.round(A/10)*10+Math.round(B/10)*10$</cond>
@@ -414,10 +414,9 @@
       <cond>(A &#247; 10) % 10 + Math.floor(B &#247; 10) % 10 &lt; 10</cond>
     </constraints>
   </params>
-  <p>Round each number to the nearest ten to estimate the sum:</p>
-  <p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1561368398/Tutor/SH1004.svg" width="500px"/></p>
+  <p>Round each number to the nearest ten to estimate the sum:</p><p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1561368398/Tutor/SH1004.svg" width="500px"/></p>
   <group>
-    <p>$A$ + $B$ = About <fib name="fib1"/>.</p>
+    <p>$A$ + $B$ = About <fib type="int" name="fib1"/></p>
     <solutions>
       <solution><cond><fib_ref name="fib1"/>==$Math.round(B/10)*10+Math.round(A/10)*10$</cond></solution>
     </solutions>
@@ -457,7 +456,7 @@
     <tutelage_ref name="TU1084M"></tutelage_ref>
   </group>
   <group name="PR1084" type="FIB">
-    <p>$(A*10)+9$ - $(B*10)+9$ = About <fib name="fib1"/></p>
+    <p>$(A*10)+9$ - $(B*10)+9$ = About <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/>==$(A-B)*10$</cond>
@@ -505,7 +504,7 @@
     <tutelage_ref name="TU1085M"></tutelage_ref>
   </group>
   <group name="PR1085" type="FIB">
-    <p>$A*10+B$ - $C*10+D$ = About <fib name="fib1"/></p>
+    <p>$A*10+B$ - $C*10+D$ = About <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/>==$((Math.round((A*10+B)/10) - Math.round((C*10+D)/10))*10)$</cond>
@@ -548,7 +547,7 @@
     <tutelage_ref name="TU1086M"></tutelage_ref>
   </group>
   <group name="PR1086" type="FIB">
-    <p>Kenneth has about <fib name="fib1"/> pens left.</p>
+    <p>Kenneth has about <fib type="int" name="fib1"/> pens left.</p>
     <solutions>
       <solution>
         <cond>
@@ -577,7 +576,7 @@
     </constraints>
   </params>
   <group>
-    <p>Find the sum: $A*100+B*10+C$ + $D$ = <fib name="fib1"/></p>
+    <p>Find the sum: $A*100+B*10+C$ + $D$ = <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/>==$(A+1)*100+(B+1)*10+(C+1)$ </cond>
@@ -607,7 +606,7 @@
     </constraints>
   </params>
   <group>
-    <p><fib name="fib1"/> = $(A*100)+(B*10)+C$ - $D$</p>
+    <p><fib type="int" name="fib1"/> = $(A*100)+(B*10)+C$ - $D$</p>
     <solutions>
       <solution>
         <cond>
@@ -673,4 +672,3 @@
   </problem_ref>
 
 </worksheet_tmpl><worksheet_ref name="WS111"/>
-append_me 

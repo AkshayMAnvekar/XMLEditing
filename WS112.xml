@@ -273,10 +273,9 @@
 			<cond>((A % 10) + (B % 10)) &lt; 10</cond>
 		</constraints>
 	</params>
-	<p>Round each number to the nearest ten to estimate the sum:</p>
-	<p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1560510016/Tutor/SH1003.svg" width="500px"/></p>
+	<p>Round each number to the nearest ten to estimate the sum:</p><p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1560510016/Tutor/SH1003.svg" width="500px"/></p>
 	<group>
-		<p>$A$ + $B$ = About <fib name="fib1" type="int"/></p>
+		<p>$A$ + $B$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$((Math.round(A/10)+Math.round(B/10))*10)$</cond>
@@ -303,7 +302,7 @@
 	</params>
 	<p>Estimate the sum by rounding each number to the nearest ten. Then solve for the exact sum.</p>
 	<group>
-		<p>Estimate: $A$ + $B$ = <fib name="fib1" type="int"/></p>
+		<p>Estimate: $A$ + $B$ = <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/> == $((Math.round(A/10)+Math.round(B/10))*10)$</cond>
@@ -315,7 +314,7 @@
 		</tutelage_ref>
 	</group>
 	<group>
-		<p>Exact: $A$ + $B$ = <fib name="fib2" type="int"/></p>
+		<p>Exact: $A$ + $B$ = <fib type="int" name="fib2"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib2"/> == $(A+B)$</cond>
@@ -367,7 +366,7 @@
 	</table>
 	<p>How many miles in total did she travel on Thursday and Friday? Round each number to the nearest hundred to estimate the sum.</p>
 	<group>
-		<p>Lily traveled about <fib name="fib1" type="int"/> miles in total on Thursday and Friday</p>
+		<p>Lily traveled about <fib type="int" name="fib1"/> miles in total on Thursday and Friday</p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/> == $((Math.round(A/100)+Math.round(B/100))*100)$</cond>
@@ -411,7 +410,7 @@
 		<tutelage_ref name="TU1092M"></tutelage_ref>
 	</group>
 	<group name="PR1092" type="FIB">
-		<p>$(A*10+B)$ - $(C*10+D)$ = About <fib name="fib1"/></p>
+		<p>$(A*10+B)$ - $(C*10+D)$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond>
@@ -461,7 +460,7 @@
 		<tutelage_ref name="TU1093M"></tutelage_ref>
 	</group>
 	<group name="PR1093" type="FIB">
-		<p>$A$ - $B$ = About <fib name="fib1"/></p>
+		<p>$A$ - $B$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond>
@@ -491,7 +490,7 @@
 	</params>
 	<p>Round each number to the nearest hundred to estimate the difference:</p>
 	<group>
-		<p>$A$ - $B$ = About <fib name="fib1"/></p>
+		<p>$A$ - $B$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution><cond><fib_ref name="fib1"/>==$(Math.round(A/100)-Math.round(B/100))*100$</cond></solution>
 		</solutions>
@@ -521,7 +520,7 @@
 		</constraints>
 	</params>
 	<group>
-		<p>Find the sum: $(A*100+B*10+C)$ + $(D*100+E*10+F)$ = <fib name="fib1"/></p>
+		<p>Find the sum: $(A*100+B*10+C)$ + $(D*100+E*10+F)$ = <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$(A*100+B*10+C)+(D*100+E*10+F)$</cond>
@@ -557,7 +556,7 @@
 		</constraints>
 	</params>
 	<group>
-		<p><fib name="fib1"/> = $(A*100)+(B*10)+C$ - $(D*100)+(E*10)+F$</p>
+		<p><fib type="int" name="fib1"/> = $(A*100)+(B*10)+C$ - $(D*100)+(E*10)+F$</p>
 		<solutions>
 			<solution><cond><fib_ref name="fib1"/>==$((A*100)+(B*10)+C)-((D*100)+(E*10)+F)$</cond></solution>
 		</solutions>
@@ -625,4 +624,3 @@
 	</problem_ref>
 
 </worksheet_tmpl><worksheet_ref name="WS112"/>
-append_me 

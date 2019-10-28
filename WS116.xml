@@ -243,8 +243,8 @@
 
 <tutelage_tmpl name ="TU1127N">
   <params>
-    <param name= "A" type= "int" />
-    <param name= "B" type= "int" />
+    <param name= "A" type= "int"/>
+    <param name= "B" type= "int"/>
   </params>
   <feedback name="FB1" >
      <trigger>
@@ -287,8 +287,8 @@
 
 <tutelage_tmpl name ="TU1128N">
   <params>
-    <param name= "A" type= "int" />
-    <param name= "B" type= "int" />
+    <param name= "A" type= "int"/>
+    <param name= "B" type= "int"/>
   </params>
   <feedback name = "FB1" >
      <trigger>
@@ -317,10 +317,9 @@
 			<cond>(A % 10) == 5</cond>
 		</constraints>
 	</params>
-	<p>Solve the problem:</p>
-	<p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1554896672/Tutor/SH1003.svg" width="500px"/></p>
+	<p>Solve the problem:</p><p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1554896672/Tutor/SH1003.svg" width="500px"/></p>
 	<group>
-		<p>$A$ + $B$ = About <fib name="fib1" type="int"/></p>
+		<p>$A$ + $B$ = About <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$Math.round(A/10)*10+Math.round(B/10)*10$</cond>
@@ -346,10 +345,9 @@
 			<cond>(B % 10) &#8800; 0</cond>
 		</constraints>
 	</params>
-	<p>Round each number to the nearest hundred to estimate the sum. Then solve for the exact answer.</p>
-	<p>$A$ + $B$</p>
+	<p>Round each number to the nearest hundred to estimate the sum. Then solve for the exact answer.</p><p>$A$ + $B$</p>
 	<group>
-		<p>Estimate: <fib name="fib1" type="int"/></p>
+		<p>Estimate: <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/> == $((Math.round(A/100)+Math.round(B/100))*100)$</cond>
@@ -361,7 +359,7 @@
 		</tutelage_ref>
 	</group>
 	<group>
-		<p>Exact: <fib name="fib2" type="int"/></p>
+		<p>Exact: <fib type="int" name="fib2"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib2"/> == $(A+B)$</cond>
@@ -385,10 +383,9 @@
 			<cond>(B % 10) ==  4 || (B % 10) == 5 || (B % 10) == 6</cond>
 		</constraints>
 	</params>
-	<p>$A$ third graders are going on a field trip along with $B$ teachers. How many people are going on the field trip altogether?</p>
-	<p>Round to the nearest ten to estimate the sum.</p>
+	<p>$A$ third graders are going on a field trip along with $B$ teachers. How many people are going on the field trip altogether?</p><p>Round to the nearest ten to estimate the sum.</p>
 	<group>
-		<p>Estimate:<fib name="fib1" type="int"/> people</p>
+		<p>Estimate:<fib type="int" name="fib1"/> people</p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/> == $(Math.round(A/10)*10)+(Math.round(B/10)*10)$</cond>
@@ -400,8 +397,7 @@
 		</tutelage_ref>
 	</group>
 	<group>
-		<p>Now find the exact sum:</p>
-		<p>Exact: <fib name="fib2" type="int"/> people</p>
+		<p>Now find the exact sum:</p><p>Exact: <fib type="int" name="fib2"/> people</p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib2"/> == $(A+B)$</cond>
@@ -439,7 +435,7 @@
 		<tutelage_ref name="TU1124M"/>
 	</group>
 	<group name="PR1124" type="FIB">
-		<p>About <fib name="fib1"/> pairs of shoes are left.</p>
+		<p>About <fib type="int" name="fib1"/> pairs of shoes are left.</p>
 		<solutions>
 			<solution><cond><fib_ref name="fib1"/>==$(Math.round(A/10)*10)-(Math.round(B/10)*10)$</cond></solution>
 		</solutions>
@@ -485,7 +481,7 @@
 		<tutelage_ref name="TU1125M"/>
 	</group>
 	<group name="PR1125" type="FIB">
-		<p>There are about <fib name="fib1"/> more mammals.</p>
+		<p>There are about <fib type="int" name="fib1"/> more mammals.</p>
 		<solutions>
 			<solution>
 				<cond>
@@ -520,7 +516,7 @@
 	</params>
 	<p>Trish picked $((A*100)+(B*10)+C)$ red flowers and $D*100+E*10+F$ yellow flowers. How many flowers did she pick altogether?</p>
 	<group>
-		<p><fib name="fib1" type="int"/> flowers</p>
+		<p><fib type="int" name="fib1"/> flowers</p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$(A*100+B*10+C)+(D*100+E*10+F)$</cond>
@@ -580,7 +576,7 @@
 		</tutelage_ref>
 	</group>
 	<group>
-		<p>$A$ &#8211; $B$ = <fib name="fib1" type="int"/></p>
+		<p>$A$ &#8211; $B$ = <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$(A-B)$</cond>
@@ -633,7 +629,7 @@
     </tutelage_ref>
   </group>
 	<group>
-		<p>$A$ &#8211; $B$ = <fib name="fib1" type="int"/></p>
+		<p>$A$ &#8211; $B$ = <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond><fib_ref name="fib1"/>==$(A-B)$</cond>
@@ -694,4 +690,3 @@
 
 </worksheet_tmpl>
 <worksheet_ref name="WS116"/>
-append_me 

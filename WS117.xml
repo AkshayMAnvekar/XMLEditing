@@ -218,7 +218,7 @@
   </params>
   <p>Estimate first and then solve for the exact sum.</p>
   <group>
-    <p>Estimate: $A$ + $B$ = <fib name="fib1" type="int"/></p>
+    <p>Estimate: $A$ + $B$ = <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/> == $((Math.round(A/10)+Math.round(B/10))*10)$</cond>
@@ -230,7 +230,7 @@
     </tutelage_ref>
   </group>
   <group>
-    <p>Exact: $A$ + $B$ = <fib name="fib2" type="int"/></p>
+    <p>Exact: $A$ + $B$ = <fib type="int" name="fib2"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib2"/> == $(A+B)$</cond>
@@ -253,11 +253,10 @@
       <cond>(A % 10) == 2 || (A % 10) == 3 || (A % 10) == 4 || (A % 10) ==  6 || (A % 10) ==  7 || (A % 10) ==  8</cond>
     </constraints>
   </params>
-  <p>Alice wants to buy a sweater that costs $$$A$ and a book that costs $$$B$. How much will it cost to buy both?  </p>
-  <p>Use the number line to estimate your answer by rounding each number to the nearest ten.</p>
-  <p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1554896672/Tutor/SH1003.svg" width="600px"/></p>
+  <p>Alice wants to buy a sweater that costs $$$A$ and a book that costs $$$B$. How much will it cost to buy both?</p>
+  <p>Use the number line to estimate your answer by rounding each number to the nearest ten.</p><p><img alt="Number line" src="https://res.cloudinary.com/ansr/image/upload/v1554896672/Tutor/SH1003.svg" width="600px"/></p>
   <group>
-    <p>It will cost about $$<fib name="fib1"/> to buy the sweater and the book.</p>
+    <p>It will cost about $$<fib type="int" name="fib1"/> to buy the sweater and the book.</p>
     <solutions>
       <solution>
         <cond>
@@ -323,10 +322,9 @@
       <cond>A + B &lt; 1000</cond>
     </constraints>
   </params>
-  <p>Round each number to the nearest ten to estimate the sum:</p>
-  <p>$A$ + $B$</p>
+  <p>Round each number to the nearest ten to estimate the sum:</p><p>$A$ + $B$</p>
   <group>
-    <p>Estimate: <fib name="fib1" type="int"/></p>
+    <p>Estimate: <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/> == $((Math.round(A/10)+Math.round(B/10))*10)$</cond>
@@ -338,8 +336,7 @@
     </tutelage_ref>
   </group>
   <group>
-    <p>Now find the exact sum:</p>
-    <p>Exact: <fib name="fib2" type="int"/></p>
+    <p>Now find the exact sum:</p><p>Exact: <fib type="int" name="fib2"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib2"/> == $(A+B)$</cond>
@@ -379,7 +376,7 @@
     <tutelage_ref name="TU1133M"/>
   </group>
   <group name="PR1133" type="FIB">
-    <p>Hui sent about <fib name="fib1"/> more text messages than Sam.</p>
+    <p>Hui sent about <fib type="int" name="fib1"/> more text messages than Sam.</p>
     <solutions>
       <solution>
         <cond>
@@ -410,7 +407,7 @@
   </params>
   <p>A shipping company shipped $A$ boxes on Monday and $B$ boxes on Friday. </p>
   <group>
-    <p>The company shipped about <fib name="fib1" type="int"/> more boxes on Monday than it did on Friday. (Round to the nearest hundred to estimate.)</p>
+    <p>The company shipped about <fib type="int" name="fib1"/> more boxes on Monday than it did on Friday. (Round to the nearest hundred to estimate.)</p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/>==$((Math.round(A/100)-Math.round(B/100))*100)$</cond>
@@ -436,7 +433,7 @@
   </params>
   <p>An animal shelter received $$$A$ on Sunday and $$$B$ on Wednesday. Round the numbers to the nearest ten to estimate the difference.</p>
   <group>
-    <p>$$<fib name="fib1" type="int"/></p>
+    <p>$$<fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/>==$(Math.round(A/10) - Math.round(B/10))*10$</cond>
@@ -452,7 +449,7 @@
 <problem_tmpl name="PR1136" width="400">
   <p>Fill in the blanks to complete the subtraction number story.</p>
   <group>
-    <p>Hiu had <fib name="fib1" type="int"/> apples. Hiu gave <fib name="fib2" type="int"/> apples to his sister. Hiu has <fib name="fib3" type="int"/>apples left.</p>
+    <p>Hiu had <fib type="int" name="fib1"/> apples. Hiu gave <fib type="int" name="fib2"/> apples to his sister. Hiu has <fib type="int" name="fib3"/>apples left.</p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib3"/>==<fib_ref name="fib1"/> &#8211; <fib_ref name="fib2"/></cond>
@@ -502,4 +499,3 @@
 </worksheet_tmpl>
 
 <worksheet_ref name="WS117"/>
-append_me 

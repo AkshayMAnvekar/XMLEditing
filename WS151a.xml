@@ -242,9 +242,9 @@
     <tutelage_ref name="TU1501M"></tutelage_ref>
   </group>
   <group name="PR1501" type="FIB">
-    <p>What is the standard form of $A$ hundreds, $B$ tens, and 1 one? <fib name="fib1" /></p>
+    <p>What is the standard form of $A$ hundreds, $B$ tens, and 1 one? <fib type="int" name="fib1"/></p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$A*100+B*10+1$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$A*100+B*10+1$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1501">
       <bind name="A" val="A"/>
@@ -311,8 +311,7 @@
       <cond>A &#62; B</cond>
     </constraints>
   </params>
-  <p>Which symbol will make the statement true?</p>
-  <p>$A$ _____ $B$</p>
+  <p>Which symbol will make the statement true?</p><p>$A$ _____ $B$</p>
   <group>
     <choice name="C1">&#62;</choice>
     <choice name="C2">&#60;</choice>
@@ -354,11 +353,11 @@
     <tutelage_ref name="TU1505M"></tutelage_ref>
 	</group>
   <group name="PR1505" type="FIB">
-		<p><fib name="fib1" /> students</p>
+		<p><fib type="int" name="fib1"/> students</p>
 		<solutions>
 			<solution>
         <cond>
-          <fib_ref name="fib1" />==$A*10$
+          <fib_ref name="fib1"/>==$A*10$
         </cond>
       </solution>
 		</solutions>
@@ -395,11 +394,11 @@
     <tutelage_ref name="TU1506M"></tutelage_ref>
 	</group>
   <group name="PR1506" type="FIB">
-		<p>$$ <fib name="fib1" /></p>
+		<p>$$ <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
         <cond>
-          <fib_ref name="fib1" />==$(A+1) * 100$
+          <fib_ref name="fib1"/>==$(A+1) * 100$
         </cond>
       </solution>
 		</solutions>
@@ -436,4 +435,3 @@
   </problem_ref>
 </worksheet_tmpl>
 <worksheet_ref name="WS151a"/>
-append_me 

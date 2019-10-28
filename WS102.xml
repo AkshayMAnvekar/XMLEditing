@@ -342,13 +342,11 @@
 
 <problem_tmpl name="PR1009" width="300">
   <group name="PR1009" type="FIB">
-    <p>Three hundred fifty-two can be expressed in standard form as 
-      <fib name="fib1" />.
-    </p>
+    <p>Three hundred fifty-two can be expressed in standard form as <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" />==352
+          <fib_ref name="fib1"/>==352
         </cond>
       </solution>
     </solutions>
@@ -357,9 +355,7 @@
     </tutelage_ref>
   </group>
   <group name="PR1009" type="MCQ">
-    <p>Three hundred fifty-two can be expressed in standard form as _____.
-      <br />
-    </p>
+    <p>Three hundred fifty-two can be expressed in standard form as _____.<br/></p>
     <choice name="C1">352
     </choice>
     <choice name="C2">532
@@ -372,7 +368,7 @@
       <solution>
         <repeat index="i" val="4">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(0)$
+            <choice_ref name="C$i+1$"/>==$(i)==(0)$
           </cond>
         </repeat>
       </solution>
@@ -382,9 +378,9 @@
 </problem_tmpl>
 <problem_tmpl name="PR1010" width="300">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
-    <param name="C" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
     <constraints>
       <cond>1 &#8804; A &#8804; 9
       </cond>
@@ -401,13 +397,11 @@
     </constraints>
   </params>
   <group name="PR1010" type="FIB">
-    <p>$A*100$ + $B*10$ + $C$ can be expressed in standard form as 
-      <fib name="fib1" />.
-    </p>
+    <p>$A*100$ + $B*10$ + $C$ can be expressed in standard form as <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" />==$(A*100)+(B*10)+C$
+          <fib_ref name="fib1"/>==$(A*100)+(B*10)+C$
         </cond>
       </solution>
     </solutions>
@@ -418,9 +412,7 @@
     </tutelage_ref>
   </group>
   <group name="PR1010" type="MCQ">
-    <p>$A*100$ + $B*10$ + $C$ can be expressed in standard form as _____.
-      <br />
-    </p>
+    <p>$A*100$ + $B*10$ + $C$ can be expressed in standard form as _____.<br/></p>
     <choice name="C1">$(B*100)+(A*10)+C$
     </choice>
     <choice name="C2">$(A*100)+(C*10)+A$
@@ -433,7 +425,7 @@
       <solution>
         <repeat index="i" val="4">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(2)$
+            <choice_ref name="C$i+1$"/>==$(i)==(2)$
           </cond>
         </repeat>
       </solution>
@@ -443,9 +435,9 @@
 </problem_tmpl>
 <problem_tmpl name="PR1011" width="300">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
-    <param name="C" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
     <constraints>
       <cond>1 &#8804; A &#8804; 9
       </cond>
@@ -462,22 +454,17 @@
     </constraints>
   </params>
   <group>
-    <p>The number $(A*100)+(B*10)+C$ can be written in expanded form as 
-      <fib name="fib1" /> + 
-      <fib name="fib2" /> + 
-      <fib name="fib3" />.
-      <br />
-    </p>
+    <p>The number $(A*100)+(B*10)+C$ can be written in expanded form as <fib type="int" name="fib1"/>+<fib type="int" name="fib2"/>+<fib type="int" name="fib3"/><br/></p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" />==$A*100$
+          <fib_ref name="fib1"/>==$A*100$
         </cond>
         <cond>
-          <fib_ref name="fib2" />==$B*10$
+          <fib_ref name="fib2"/>==$B*10$
         </cond>
         <cond>
-          <fib_ref name="fib3" />==$C$
+          <fib_ref name="fib3"/>==$C$
         </cond>
       </solution>
     </solutions>
@@ -489,8 +476,7 @@
   </group>
 </problem_tmpl>
 <problem_tmpl name="PR1012" width="300">
-  <p>The number 576 can also be written as:
-  </p>
+  <p>The number 576 can also be written as:</p>
   <group>
     <choice name="C1">57 + 6
     </choice>
@@ -502,7 +488,7 @@
       <solution>
         <repeat index="i" val="3">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(2)$
+            <choice_ref name="C$i+1$"/>==$(i)==(2)$
           </cond>
         </repeat>
       </solution>
@@ -512,9 +498,9 @@
 </problem_tmpl>
 <problem_tmpl name="PR1013" width="300">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
-    <param name="C" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
+    <param name="C" type="int"/>
     <constraints>
       <cond>0 &lt; A &lt; 10
       </cond>
@@ -530,28 +516,21 @@
       </cond>
     </constraints>
   </params>
-  <p>In the number $(A*100)+(B*10)+C$, there are:
-  </p>
+  <p>In the number $(A*100)+(B*10)+C$, there are:</p>
   <group>
-    <p>
-      <fib name="fib1" type="int" /> hundreds
-    </p>
-    <p>
-      <fib name="fib2" type="int" /> tens
-    </p>
-    <p>
-      <fib name="fib3" type="int" /> ones
-    </p>
+    <p> <fib type="int" name="fib1"/> hundreds</p>
+    <p> <fib type="int" name="fib2"/> tens</p>
+    <p> <fib type="int" name="fib3"/> ones</p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" /> == $A$
+          <fib_ref name="fib1"/> == $A$
         </cond>
         <cond>
-          <fib_ref name="fib2" /> == $B$
+          <fib_ref name="fib2"/> == $B$
         </cond>
         <cond>
-          <fib_ref name="fib3" /> == $C$
+          <fib_ref name="fib3"/> == $C$
         </cond>
       </solution>
     </solutions>
@@ -564,29 +543,19 @@
 </problem_tmpl>
 <problem_tmpl name="PR1014" width="300">
   <group name="PR1014" type="FIB">
-    <p>Zach has 3 number cards. What is the least possible number that he can make with these cards? 
-      <fib name="fib1" />
-    </p>
-    <p><img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1006.svg" width="70px" />
-      <img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1007.svg" width="70px" />
-      <img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1003.svg" width="70px" />
-    </p>
+    <p>Zach has 3 number cards. What is the least possible number that he can make with these cards? <fib type="int" name="fib1"/></p><p><img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1006.svg" width="70px"/><img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1007.svg" width="70px"/><img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1003.svg" width="70px"/></p>
     <solutions>
       <solution>
         <cond>
-          <fib_ref name="fib1" />==367
+          <fib_ref name="fib1"/>==367
         </cond>
       </solution>
     </solutions>
     <tutelage_ref name="TU1014"></tutelage_ref>
   </group>
   <group name="PR1014" type="MCQ">
-    <p>Zach has 3 number cards. What is the least possible number that he can make with these cards?
-    </p>
-    <p><img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1006.svg" width="70px" />
-      <img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1007.svg" width="70px" />
-      <img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1003.svg" width="70px" />
-    </p>
+    <p>Zach has 3 number cards. What is the least possible number that he can make with these cards?</p>
+    <p><img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1006.svg" width="70px"/><img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1007.svg" width="70px"/><img src="https://res.cloudinary.com/ansr/image/upload/v1561370697/Tutor/OB1003.svg" width="70px"/></p>
     <choice name="C1">673
     </choice>
     <choice name="C2">736
@@ -599,7 +568,7 @@
       <solution>
         <repeat index="i" val="4">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(3)$
+            <choice_ref name="C$i+1$"/>==$(i)==(3)$
           </cond>
         </repeat>
       </solution>
@@ -610,7 +579,7 @@
 
 <problem_tmpl name="PR1015" width="300">
   <params>
-    <param name="A" type="int" />
+    <param name="A" type="int"/>
     <constraints>
       <cond>A &gt; 136
       </cond>
@@ -618,9 +587,7 @@
       </cond>
     </constraints>
   </params>
-  <p>Zoe wrote down the heights of her cousins Noah and Leo. Zoe is taller than Noah but shorter than Leo. What could be Zoe’s height?
-    <br />
-  </p>
+  <p>Zoe wrote down the heights of her cousins Noah and Leo. Zoe is taller than Noah but shorter than Leo. What could be Zoe’s height?<br/></p>
   <table>
     <tr>
       <td>
@@ -651,12 +618,9 @@
       </td>
     </tr>
   </table>
-  <br />
+  <br/>
   <group name="PR1015" type="FIB">
-    <p> 
-      <fib name="fib1" /> centimeters
-      <br />
-    </p>
+    <p> <fib type="int" name="fib1"/> centimeters<br/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/> &gt; 136 </cond>
@@ -680,7 +644,7 @@
       <solution>
         <repeat index="i" val="4">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(1)$
+            <choice_ref name="C$i+1$"/>==$(i)==(1)$
           </cond>
         </repeat>
       </solution>
@@ -691,8 +655,8 @@
 
 <problem_tmpl name="PR1016" width="300">
   <params>
-    <param name="A" type="int" />
-    <param name="B" type="int" />
+    <param name="A" type="int"/>
+    <param name="B" type="int"/>
     <constraints>
       <cond>1 &lt; A
       </cond>
@@ -702,11 +666,8 @@
       </cond>
     </constraints>
   </params>
-  <p>Which symbol will make the statement true?
-  </p>
-  <p>$A$ hundreds + $B$ tens + $B$ ones _____ $(A*100)+(B*10)+B$
-    <br />
-  </p>
+  <p>Which symbol will make the statement true?</p>
+  <p>$A$ hundreds + $B$ tens + $B$ ones _____ $(A*100)+(B*10)+B$<br/></p>
   <group>
     <choice name="C1">&lt;
     </choice>
@@ -718,7 +679,7 @@
       <solution>
         <repeat index="i" val="3">
           <cond>
-            <choice_ref name="C$i+1$" />==$(i)==(2)$
+            <choice_ref name="C$i+1$"/>==$(i)==(2)$
           </cond>
         </repeat>
       </solution>
@@ -732,36 +693,36 @@
   </problem_ref>
   
   <problem_ref name="PR1010">
-    <bind name="A" val="5" />
-    <bind name="B" val="6" />
-    <bind name="C" val="2" />
+    <bind name="A" val="5"/>
+    <bind name="B" val="6"/>
+    <bind name="C" val="2"/>
   </problem_ref>
 
   <problem_ref name="PR1011">
-    <bind name="A" val="6" />
-    <bind name="B" val="5" />
-    <bind name="C" val="1" />
+    <bind name="A" val="6"/>
+    <bind name="B" val="5"/>
+    <bind name="C" val="1"/>
   </problem_ref>
 
-  <problem_ref name="PR1012" />
+  <problem_ref name="PR1012"/>
 
   <problem_ref name="PR1013">
-    <bind name="A" val="1" />
-    <bind name="B" val="3" />
-    <bind name="C" val="9" />
+    <bind name="A" val="1"/>
+    <bind name="B" val="3"/>
+    <bind name="C" val="9"/>
   </problem_ref>
 
   <problem_ref name="PR1014">
   </problem_ref>
 
   <problem_ref name="PR1015">
-    <bind name="A" val="142" />
+    <bind name="A" val="142"/>
   </problem_ref>
 
   <problem_ref name="PR1016">
-    <bind name="A" val="3" />
-    <bind name="B" val="4" />
+    <bind name="A" val="3"/>
+    <bind name="B" val="4"/>
   </problem_ref>
   
 </worksheet_tmpl>
-<worksheet_ref name="WS102" />append_me 
+<worksheet_ref name="WS102"/>

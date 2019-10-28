@@ -389,10 +389,10 @@
   </params>
   <p>Joseph bought fruits and vegetables for $$$A*10+B$. Round the amount he spent to the nearest ten.</p>
   <group name="PR1057" type="FIB">
-    <p>He spent about $$<fib name="fib1" />.</p>
+    <p>He spent about $$<fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
-        <cond><fib_ref name="fib1" />==$(A+1)*10$</cond>
+        <cond><fib_ref name="fib1"/>==$(A+1)*10$</cond>
       </solution>
     </solutions>
     <tutelage_ref name="TU1057">
@@ -426,10 +426,10 @@
     </constraints>
   </params>
   <group>
-    <p>$(A*100)+(B*10)+C$ rounded to the nearest ten is <fib name="fib1" />.</p>
+    <p>$(A*100)+(B*10)+C$ rounded to the nearest ten is <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
-        <cond><fib_ref name="fib1" />==$A*100+(B+1)*10$</cond>
+        <cond><fib_ref name="fib1"/>==$A*100+(B+1)*10$</cond>
       </solution>
     </solutions>
     <tutelage_ref name="TU1058">
@@ -452,10 +452,10 @@
   </params>
   <p>There are $(A*100)+(B*10)+C$ apples on an apple tree. Round the number of apples to the nearest hundred.</p>
   <group name="PR1059" type="FIB">
-    <p><fib name="fib1" /> apples</p>
+    <p><fib type="int" name="fib1"/> apples</p>
     <solutions>
       <solution>
-        <cond><fib_ref name="fib1" />==$A*100$</cond>
+        <cond><fib_ref name="fib1"/>==$A*100$</cond>
       </solution>
     </solutions>
     <tutelage_ref name="TU1059">
@@ -488,10 +488,10 @@
   </params>
   <p>$A$ third-grade students are going on a field trip. Round the number of third-grade students to the nearest hundred.</p>
   <group name="PR1060" type="FIB">
-    <p><fib name="fib1" /> students</p>
+    <p><fib type="int" name="fib1"/> students</p>
     <solutions>
       <solution>
-        <cond><fib_ref name="fib1" />==200</cond>
+        <cond><fib_ref name="fib1"/>==200</cond>
       </solution>
     </solutions>
     <tutelage_ref name="TU1060">
@@ -523,7 +523,7 @@
     </constraints>
   </params>
   <group name="PR1061" type="FIB">
-    <p>Which number rounds to $A*10$ if you are rounding to the nearest ten? <fib name="fib1" /></p>
+    <p>Which number rounds to $A*10$ if you are rounding to the nearest ten? <fib type="int" name="fib1"/></p>
     <solutions>
       <solution>
         <cond><fib_ref name="fib1"/> &gt; 65</cond>
@@ -562,9 +562,9 @@
   </params>
   <p>Lily and her mom go on a road trip. They travel $(A*100)+(B*10)+(C)$ miles in 3 days. Estimate the distance they traveled to the nearest hundred.</p>
   <group name="PR1062" type="FIB">
-    <p><fib name="fib1" /> miles</p>
+    <p><fib type="int" name="fib1"/> miles</p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$(A*100)$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$(A*100)$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1062">
       <bind name="A" val="A"/>
@@ -602,9 +602,9 @@
   </params>
   <p>Will saw $(A*100)+(B*10)+(C)$ vultures in a desert. Estimate the number of vultures he saw to the nearest hundred.</p>
   <group name="PR1063" type="FIB">
-    <p><fib name="fib1" /> vultures</p>
+    <p><fib type="int" name="fib1"/> vultures</p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$(A+1)*100$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$(A+1)*100$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1063">
       <bind name="A" val="A"/>
@@ -642,9 +642,9 @@
   </params>
   <p>Joey spent $$$(A*100)+(B*10)+(C)$ on food in a month. Round the amount he spent to the nearest hundred.</p>
   <group name="PR1064" type="FIB">
-    <p>$$ <fib name="fib1" /></p>
+    <p>$$ <fib type="int" name="fib1"/></p>
     <solutions>
-      <solution><cond><fib_ref name="fib1" />==$(A+1)*100$</cond></solution>
+      <solution><cond><fib_ref name="fib1"/>==$(A+1)*100$</cond></solution>
     </solutions>
     <tutelage_ref name="TU1064">
       <bind name="A" val="A"/>
@@ -711,4 +711,3 @@
 </worksheet_tmpl>
 
 <worksheet_ref name="WS108"/>
-append_me 

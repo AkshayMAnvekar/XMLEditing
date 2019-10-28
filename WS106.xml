@@ -312,8 +312,8 @@
 
 <problem_tmpl name="PR1041" width="300">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
 		<constraints>
 			<cond>0 &lt; A &lt; 10
 			</cond>
@@ -324,13 +324,11 @@
 		</constraints>
 	</params>
 	<group>
-		<p>What is $A$ hundreds, $B+10$ tens, and 0 ones in standard form? 
-			<fib name="fib1" type="int" />
-		</p>
+		<p>What is $A$ hundreds, $B+10$ tens, and 0 ones in standard form? <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond>
-					<fib_ref name="fib1" /> == $((A+1)*100)+(B*10)$
+					<fib_ref name="fib1"/> == $((A+1)*100)+(B*10)$
 				</cond>
 			</solution>
 		</solutions>
@@ -342,8 +340,8 @@
 </problem_tmpl>
 <problem_tmpl name="PR1042" width="300">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
 		<constraints>
 			<cond>0 &lt; A &lt; 10
 			</cond>
@@ -353,15 +351,13 @@
 			</cond>
 		</constraints>
 	</params>
-	<p>In the number $(A*100)+(10*B)$:
-	</p>
+	<p>In the number $(A*100)+(10*B)$:</p>
 	<group>
-		<p>the digit <fib name="fib1" type="int" /> is in the hundreds place      
-	</p>
+		<p>the digit <fib type="int" name="fib1"/> is in the hundreds place</p>
 	<solutions>
 		<solution>
 			<cond>
-				<fib_ref name="fib1" /> == $A$
+				<fib_ref name="fib1"/> == $A$
 			</cond>
 		</solution>
 	</solutions>
@@ -371,12 +367,11 @@
 	</tutelage_ref>
 </group>
 <group> 
-	<p>the digit <fib name="fib2" type="int" /> is in the tens place
-</p>
+	<p>the digit <fib type="int" name="fib2"/> is in the tens place</p>
 <solutions>
 	<solution>
 		<cond>
-			<fib_ref name="fib2" /> == $B$
+			<fib_ref name="fib2"/> == $B$
 		</cond>
 	</solution>
 </solutions>
@@ -386,12 +381,11 @@
 </tutelage_ref>
 </group>
 <group>
-	<p>the digit <fib name="fib3" type="int" /> is in the one place 
-</p>
+	<p>the digit <fib type="int" name="fib3"/> is in the one place</p>
 <solutions>
 	<solution>
 		<cond>
-			<fib_ref name="fib3" /> == 0
+			<fib_ref name="fib3"/> == 0
 		</cond>
 	</solution>
 </solutions>
@@ -404,8 +398,8 @@
 </problem_tmpl>
 <problem_tmpl name="PR1043" width="300">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
 		<constraints>
 			<cond>0 &lt; A &lt; 10
 			</cond>
@@ -416,21 +410,20 @@
 		</constraints>
 	</params>
 	<group>
-		<p>The number $(A*100)+B$ can be written in word form as 
-			<fib name="fib1" type="int" /> hundreds + 
-			<fib name="fib2" type="int" /> tens + 
-			<fib name="fib3" type="int" /> ones.
+		<p>The number $(A*100)+B$ can be written in word form as <fib type="int" name="fib1"/> hundreds + 
+			<fib type="int" name="fib2"/> tens + 
+			<fib type="int" name="fib3"/> ones.
 		</p>
 		<solutions>
 			<solution>
 				<cond>
-					<fib_ref name="fib1" /> == $A$
+					<fib_ref name="fib1"/> == $A$
 				</cond>
 				<cond>
-					<fib_ref name="fib2" /> == $0$
+					<fib_ref name="fib2"/> == $0$
 				</cond>
 				<cond>
-					<fib_ref name="fib3" /> == $B$
+					<fib_ref name="fib3"/> == $B$
 				</cond>
 			</solution>
 		</solutions>
@@ -441,9 +434,8 @@
 	</group>
 </problem_tmpl>
 <problem_tmpl name="PR1044" width="500">
-	<p>Draw lines to connect the numbers in standard form on the left to their word forms on the right.
-	</p>
-	<br />
+	<p>Draw lines to connect the numbers in standard form on the left to their word forms on the right.</p>
+	<br/>
 	<group>
 		<grid columns="200px 300px" gap="50px">
 			<cell>Standard Form
@@ -478,13 +470,13 @@
 		<solutions>
 			<solution>
 				<cond>
-					<slot_ref name="Slot1L" />.containsExactly("Slot2R")
+					<slot_ref name="Slot1L"/>.containsExactly("Slot2R")
 				</cond>
 				<cond>
-					<slot_ref name="Slot2L" />.containsExactly("Slot3R")
+					<slot_ref name="Slot2L"/>.containsExactly("Slot3R")
 				</cond>
 				<cond>
-					<slot_ref name="Slot3L" />.containsExactly("Slot1R")
+					<slot_ref name="Slot3L"/>.containsExactly("Slot1R")
 				</cond>
 			</solution>
 		</solutions>
@@ -494,9 +486,9 @@
 
 <problem_tmpl name="PR1045" width="300">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
-		<param name="C" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<param name="C" type="int"/>
 		<constraints>
 			<cond>1 &#8804; A &#8804; 4
 			</cond>
@@ -515,13 +507,11 @@
 		</constraints>
 	</params>
 	<group name="PR1045" type="FIB">
-		<p>What is the greatest possible number that can be made from the digits $A$, $B$, and $C$? 
-			<fib name="fib1" />
-		</p>
+		<p>What is the greatest possible number that can be made from the digits $A$, $B$, and $C$? <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond>
-					<fib_ref name="fib1" />==$(C*100)+(B*10)+A$
+					<fib_ref name="fib1"/>==$(C*100)+(B*10)+A$
 				</cond>
 			</solution>
 		</solutions>
@@ -532,9 +522,7 @@
 		</tutelage_ref>
 	</group>
 	<group name="PR1045" type="MCQ">
-		<p>What is the greatest possible number that can be made from the digits $A$, $B$, and $C$?
-			<br />
-		</p>
+		<p>What is the greatest possible number that can be made from the digits $A$, $B$, and $C$?<br/></p>
 		<choice name="C1">$(A*100)+(B*10)+C$
 		</choice>
 		<choice name="C2">$(C*100)+(B*10)+A$
@@ -547,7 +535,7 @@
 			<solution>
 				<repeat index="i" val="4">
 					<cond>
-						<choice_ref name="C$i+1$" />==$(i)==(1)$
+						<choice_ref name="C$i+1$"/>==$(i)==(1)$
 					</cond>
 				</repeat>
 			</solution>
@@ -558,8 +546,8 @@
 
 <problem_tmpl name="PR1046" width="300">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
 		<constraints>
 			<cond>100 &lt; A
 			</cond>
@@ -573,16 +561,13 @@
 			</cond>
 		</constraints>
 	</params>
-	<p>Fill in the blanks to make true statements.
-	</p>
+	<p>Fill in the blanks to make true statements.</p>
 	<group>
-		<p>$A$ &lt; 
-			<fib name="fib1" />
-		</p>
+		<p>$A$ &lt; <fib type="int" name="fib1"/></p>
 		<solutions>
 			<solution>
 				<cond>$A$ &lt; 
-					<fib_ref name="fib1" />
+					<fib_ref name="fib1"/>
 				</cond>
 			</solution>
 		</solutions>
@@ -591,14 +576,12 @@
 		</tutelage_ref>
 	</group>
 	<group>
-		<p> $B$ &lt; 
-			<fib name="fib2" />
-		</p>
+		<p> $B$ &lt; <fib type="int" name="fib2"/></p>
 		<solutions>
 			<solution>
 				
 				<cond>$B$ &lt; 
-					<fib_ref name="fib2" />
+					<fib_ref name="fib2"/>
 				</cond>
 				
 			</solution>
@@ -608,13 +591,11 @@
 		</tutelage_ref>
 	</group>
 	<group>
-		<p>$A$ &lt; 
-			<fib name="fib3" /> &lt; $B$
-		</p>
+		<p>$A$ &lt; <fib type="int" name="fib3"/> &lt; $B$</p>
 		<solutions>
 			<solution>
 				<cond>$A$ &lt; 
-					<fib_ref name="fib3" /> &lt; $B$
+					<fib_ref name="fib3"/> &lt; $B$
 				</cond>
 			</solution>
 		</solutions>
@@ -626,16 +607,14 @@
 </problem_tmpl>
 <problem_tmpl name="PR1047" width="200">
 	<params>
-		<param name="A" type="int" />
+		<param name="A" type="int"/>
 		<constraints>
 			<cond>0 &lt; A &lt; 10
 			</cond>
 		</constraints>
 	</params>
-	<p>Which symbol makes the statement true?
-	</p>
-	<p>$(A*100)$ _____ $(A*10)$ tens
-	</p>
+	<p>Which symbol makes the statement true?</p>
+	<p>$(A*100)$ _____ $(A*10)$ tens</p>
 	<group>
 		<choice name="C1">&lt;
 		</choice>
@@ -647,7 +626,7 @@
 			<solution>
 				<repeat index="i" val="3">
 					<cond>
-						<choice_ref name="C$i+1$" />==$(i)==(2)$
+						<choice_ref name="C$i+1$"/>==$(i)==(2)$
 					</cond>
 				</repeat>
 			</solution>
@@ -657,10 +636,10 @@
 </problem_tmpl>
 <problem_tmpl name="PR1048" width="400">
 	<params>
-		<param name="A" type="int" />
-		<param name="B" type="int" />
-		<param name="C" type="int" />
-		<param name="D" type="int" />
+		<param name="A" type="int"/>
+		<param name="B" type="int"/>
+		<param name="C" type="int"/>
+		<param name="D" type="int"/>
 		<constraints>
 			<cond>A &gt; 100
 			</cond>
@@ -674,8 +653,7 @@
 			</cond>
 		</constraints>
 	</params>
-	<p>Look at the numbers in the table. Which company sold the fewest bikes?
-	</p>
+	<p>Look at the numbers in the table. Which company sold the fewest bikes?</p>
 	<table>
 		<tr>
 			<td>
@@ -712,7 +690,7 @@
 			</td>
 		</tr>
 	</table>
-	<br />
+	<br/>
 	<group>
 		<choice name="C1">Royal Bikes
 		</choice>
@@ -726,7 +704,7 @@
 			<solution>
 				<repeat index="i" val="4">
 					<cond>
-						<choice_ref name="C$i+1$" />==$(i)==(2)$
+						<choice_ref name="C$i+1$"/>==$(i)==(2)$
 					</cond>
 				</repeat>
 			</solution>
@@ -737,35 +715,35 @@
 
 <worksheet_tmpl name="WS106">
 	<problem_ref name="PR1041">
-		<bind name="A" val="6" />
-		<bind name="B" val="0" />
+		<bind name="A" val="6"/>
+		<bind name="B" val="0"/>
 	</problem_ref>
 	<problem_ref name="PR1042">
-		<bind name="A" val="2" />
-		<bind name="B" val="8" />
+		<bind name="A" val="2"/>
+		<bind name="B" val="8"/>
 	</problem_ref>
 	<problem_ref name="PR1043">
-		<bind name="A" val="3" />
-		<bind name="B" val="5" />
+		<bind name="A" val="3"/>
+		<bind name="B" val="5"/>
 	</problem_ref>
-	<problem_ref name="PR1044" />
+	<problem_ref name="PR1044"/>
 	<problem_ref name="PR1045">
-		<bind name="A" val="4" />
-		<bind name="B" val="5" />
-		<bind name="C" val="8" />
+		<bind name="A" val="4"/>
+		<bind name="B" val="5"/>
+		<bind name="C" val="8"/>
 	</problem_ref>
 	<problem_ref name="PR1046">
-		<bind name="A" val="101" />
-		<bind name="B" val="284" />
+		<bind name="A" val="101"/>
+		<bind name="B" val="284"/>
 	</problem_ref>
 	<problem_ref name="PR1047">
-		<bind name="A" val="4" />
+		<bind name="A" val="4"/>
 	</problem_ref>
 	<problem_ref name="PR1048">
-		<bind name="A" val="397" />
-		<bind name="B" val="480" />
-		<bind name="C" val="625" />
-		<bind name="D" val="808" />
+		<bind name="A" val="397"/>
+		<bind name="B" val="480"/>
+		<bind name="C" val="625"/>
+		<bind name="D" val="808"/>
 	</problem_ref>
 </worksheet_tmpl>
-<worksheet_ref name="WS106" />append_me 
+<worksheet_ref name="WS106"/>
