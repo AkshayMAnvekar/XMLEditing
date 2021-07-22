@@ -6,7 +6,7 @@
   "dependencies": {
     "nodemon": "^1.19.2",
     "pretty-data": "^0.40.0",
-    "xlsx": "^0.15.0"
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {},
   "scripts": {
